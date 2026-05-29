@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, a4paper]{article}
+\usepackage[a4paper,left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Università degli studi di Milano-Bicocca}\\[1cm] % Name of your university/college
+\textsc{\Large Data Science Lab for Smart Cities}\\[0.3cm] % Major heading such as course name
+\textsc{\large Final Essay}\\[0.1cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Title}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\large
+\emph{Authors:}\\
+John Smith - XSFT901121- john.smith@email.com \\   % Your name
+John Doe - MTS4128991- john.doe@email.com   \\[1cm] % Your name
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics{figs/logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+\begin{abstract}
+The ABSTRACT is not a part of the body of the report itself. Rather, the abstract is a brief summary of the report contents that is often separately circulated so potential readers can decide whether to read the report. The abstract should very concisely summarize the whole report: why it was written, what was discovered or developed, and what is claimed to be the significance of the effort. The abstract does not include figures or tables, and only the most significant numerical values or results should be given.
+\end{abstract}
+
+
+\section{Problem Description and Indicators}
+
+\begin{itemize}
+    \item Select a problem related to smart cities, such as traffic management, traffic prediction, energy consumption, waste management and optimization, or air pollution.
+    \item Explain the problem, its importance, and its impact on the city and its inhabitants.
+    \item Select or devise one or more indicators to measure the problem and/or the impact of a possible solution. Indicators can include, for example, traffic volume over time, air quality index, energy consumption per capita, or waste generation per household.
+    \item Consider the ethical and social implications of the problem and its related indicators.
+\end{itemize}
+
+
+\newpage
+\section{Data Analytics, Optimization and Policy Suggestions}
+\begin{itemize}
+\item Identify and select relevant datasets that can be used to analyze the problem. If necessary, implement scraping activities to create the dataset.
+\item Clean and wrangle the data as necessary to prepare it for analysis.
+\item Use spatial and temporal analysis tools to identify any correlations or patterns in the data.
+\item Visualize the data using appropriate tools and techniques.
+\item If the problem requires it, develop a prediction model to estimate future trends and patterns.
+\item If the problem requires it, develop a classification/clustering model to assign data points to relevant classes.
+\item If the problem requires it, develop an optimization model to address the problem, such as an algorithm to assign a population of kids to the most suitable kindergarden considering multiple criteria (distance, school capacity, school facilities…).
+\item Discuss the main results.
+\item Suggest possible new policy or optimizations based on the data analysis to address the problem, such as implementing smart traffic management systems, promoting renewable energy sources, or encouraging recycling.
+\item Consider the ethical and social implications of the policy suggestions.
+\end{itemize}
+\newpage
+\section*{References}
+
+The references section should contain complete citations following standard form.  The references should be numbered and listed in the order they were cited in the body of the report. In the text of the report, a particular reference can be cited by using a numerical number in brackets as \cite{Lee2015} that corresponds to its number in the reference list. \LaTeX provides several styles to format the references
+
+\bibliographystyle{IEEEtran}
+\bibliography{references.bib}
+
+\end{document}
