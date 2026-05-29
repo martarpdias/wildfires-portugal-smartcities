@@ -20,7 +20,7 @@ The full analysis is implemented in Python.
 
 ## Research Question
 
-> *Is wildfire prevention infrastructure in Portugal distributed equitably, and do the most socially vulnerable municipalities face both the highest fire risk and the greatest coverage gaps?*
+> *How effectively does Portugal's primary fuel management infrastructure cover high wildfire risk zones, are the gaps in prevention coverage disproportionately concentrated in the most socially vulnerable municipalities, and what targeted policy interventions could address these inequalities?*
 
 ---
 
