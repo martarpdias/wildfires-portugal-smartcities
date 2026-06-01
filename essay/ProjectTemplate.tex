@@ -407,10 +407,57 @@ Power Study (\textit{Estudo sobre o Poder de Compra Concelhio}), which
 provides the per capita income index (IpC) for each municipality relative
 to the national average \cite{INE_PoderCompra}.\\
 
+
 \subsection{Data Preparation}
-Data Cleaning\\
-Spatial Harmonization\\
-Municipality-Level Integration\\
+
+\subsubsection{Data Cleaning}
+All datasets were inspected and cleaned prior to analysis to ensure consistency
+and correctness. For the conjunctural hazard rasters, nodata values were
+identified and masked separately for each annual layer, as the four yearly
+files used different encoding conventions: nodata values of 255 for 2021,
+\textit{None} for 2022, and 15 for 2023 and 2024. Zero-value pixels were
+additionally excluded, as they represent areas with no recorded hazard rather
+than genuinely low values. For the social vulnerability data, sourced from
+the INE 2023 Municipal Purchasing Power Study, raw values were parsed from a
+semicolon-delimited CSV file encoded in Latin-1, decimal commas were converted
+to floating-point numbers, and rows with missing values were removed. Municipality
+names were then normalised through Unicode accent removal and lowercasing to
+enable consistent string matching between the INE dataset and the official
+administrative boundary file, yielding a final set of 278 matched municipalities
+for the municipal-level analysis.\\
+
+\subsubsection{Spatial Harmonisation}
+All datasets were aligned to a common spatial reference system --- EPSG:3763
+(PT-TM06/ETRS89), the official Portuguese national grid --- and resampled to a
+uniform 250~m resolution reference grid. The conjunctural hazard rasters were
+originally provided at 25~m resolution; to manage memory efficiently at national
+scale, all rasters were downsampled by a factor of 10 using \texttt{rasterio}'s
+out-shape resampling, reducing memory requirements by approximately 100$\times$
+while preserving the spatial patterns relevant to the analysis. A mainland Portugal
+boundary mask was derived from the national administrative boundary shapefile and
+rasterised onto the reference grid to restrict all outputs to continental territory,
+excluding the Atlantic archipelagos. All vector layers --- burned area perimeters,
+critical fire locations, vegetation index, aridity index, and the primary fuel
+management network --- were verified against the reference coordinate system prior
+to rasterisation.\\
+
+\subsubsection{Municipality-Level Integration}
+Vector layers were converted to raster format at 250~m resolution using the
+hazard layer as the reference grid, via \texttt{rasterio.features.rasterize}.
+Categorical attributes were mapped to ordinal numerical values prior to
+rasterisation: the vegetation quality index (\textit{Índice de Qualidade da
+Vegetação}, IQV) was encoded on a five-point scale from \textit{Baixa}~(1) to
+\textit{Muito alta}~(5), and the aridity index from \textit{Húmido}~(1) to
+\textit{Semiárido}~(4). Burned area perimeters for 2021--2024 were merged into
+a single cumulative binary layer (burned~=~5, unburned~=~1 on the normalised
+1--5 scale). All layers were then normalised to a common 1--5 scale and combined
+through a weighted overlay to produce the composite Wildfire Risk Index, described
+in detail in Section~\ref{sec:risk}. Municipal-level statistics were subsequently
+computed by iterating over each municipality polygon, rasterising its boundary
+onto the reference grid, and intersecting it with the risk and coverage layers
+to extract per-municipality totals. Social vulnerability scores were joined to
+the municipal geodataframe using the normalised municipality names as the
+common key.\\
 
 
 \subsection{Wildfire Risk Assessment}
