@@ -1,0 +1,17 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Problem Description and Indicators}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Problem Description}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Indicators}{4}{}%
+\contentsline {section}{\numberline {2}Data Analytics, Optimization and Policy Suggestions}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Datasets}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Data Preparation}{5}{}%
+\contentsline {subsection}{\numberline {2.3}Wildfire Risk Assessment}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Prevention Coverage Analysis}{5}{}%
+\contentsline {subsection}{\numberline {2.5}Municipal-Level Analysis}{6}{}%
+\contentsline {subsection}{\numberline {2.6}Economic Vulnerability Analysis}{6}{}%
+\contentsline {subsection}{\numberline {2.7}Relationship Between Coverage Gaps and Economic Vulnerability}{6}{}%
+\contentsline {subsection}{\numberline {2.8}Results and Discussion}{6}{}%
+\contentsline {subsection}{\numberline {2.9}Policy Interventions}{6}{}%
+\contentsline {subsection}{\numberline {2.10}Ethical and Social Implications of Policy Recommendations}{6}{}%
+\contentsline {section}{CRediT Author Statement}{7}{}%
+\contentsline {section}{References}{8}{}%

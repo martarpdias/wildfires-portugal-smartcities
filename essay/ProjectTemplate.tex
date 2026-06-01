@@ -1,4 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % University Assignment Title Page 
 % LaTeX Template
 % Version 1.0 (27/12/12)
@@ -60,7 +59,7 @@
 %----------------------------------------------------------------------------------------
 
 \HRule \\[0.4cm]
-{ \huge \bfseries Title}\\[0.4cm] % Title of your document
+{ \huge \bfseries Wildfire Risk and Fuel Management in Portugal: Spatial Coverage Gaps, Economic Vulnerability, and Policy Interventions}\\[0.4cm] % Title of your document
 \HRule \\[1.5cm]
  
 %----------------------------------------------------------------------------------------
@@ -69,8 +68,14 @@
 
 \large
 \emph{Authors:}\\
-John Smith - XSFT901121- john.smith@email.com \\   % Your name
-John Doe - MTS4128991- john.doe@email.com   \\[1cm] % Your name
+
+Inês Maneta - 948927 - i.gomesfernandessm@campus.unimib.it\\
+
+João Sousa - 948933 - j.gouveianunesdes@campus.unimib.it\\
+
+Marta Dias - 948955 - m.szolnokyramospi@campus.unimib.it\\
+
+Rita Pinto - 948819 - r.trindadepinto@campus.unimib.it\\[1cm]
 
 % If you don't want a supervisor, uncomment the two lines below and remove the section above
 %\Large \emph{Author:}\\
@@ -80,14 +85,13 @@ John Doe - MTS4128991- john.doe@email.com   \\[1cm] % Your name
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 
-{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+{\large \ June 11, 2026}\\[2cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
 
-\includegraphics{figs/logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
- 
+\includegraphics[width=0.3\textwidth]{logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
 %----------------------------------------------------------------------------------------
 
 \vfill % Fill the rest of the page with whitespace
@@ -95,41 +99,401 @@ John Doe - MTS4128991- john.doe@email.com   \\[1cm] % Your name
 \end{titlepage}
 
 
+
+
 \begin{abstract}
-The ABSTRACT is not a part of the body of the report itself. Rather, the abstract is a brief summary of the report contents that is often separately circulated so potential readers can decide whether to read the report. The abstract should very concisely summarize the whole report: why it was written, what was discovered or developed, and what is claimed to be the significance of the effort. The abstract does not include figures or tables, and only the most significant numerical values or results should be given.
+
+Wildfires represent a major environmental and societal challenge in Portugal, with climate change increasing the frequency and severity of fire-prone conditions. Effective prevention requires not only the identification of high-risk areas but also the equitable allocation of protective infrastructure across territories with different economic capacities. This study evaluates how effectively Portugal’s Primary Fuel Management Network covers high wildfire risk zones and investigates whether municipalities with lower purchasing power receive proportionate levels of prevention coverage.\\
+
+Using a Data Science and Smart Cities approach, the analysis integrates wildfire risk data, fuel management infrastructure, municipal boundaries, and purchasing power indicators through Python-based geospatial and statistical methods. Spatial analyses are conducted to assess the alignment between wildfire risk and prevention infrastructure, while municipality-level comparisons explore potential relationships between prevention coverage gaps and economic vulnerability.\\
+
+Results indicate that X percentage of high-risk areas are covered by the Primary Fuel Management Network. Municipalities with lower purchasing power were found to exhibit lower/higher levels of prevention coverage, suggesting the presence/absence of territorial inequalities in wildfire resilience. These findings highlight the importance of considering both environmental risk and socio-economic conditions when designing prevention strategies and allocating public resources.\\
+
+This research contributes to the Smart Cities framework by demonstrating how geospatial intelligence and data-driven analysis can support the identification of municipalities where wildfire risk, prevention coverage gaps, and economic vulnerability intersect, enabling more targeted, equitable, and evidence-based policy interventions aimed at improving territorial resilience and climate adaptation.\\
+
+
+%The ABSTRACT is not a part of the body of the report itself. Rather, the abstract is a brief summary of the report contents that is often separately circulated so potential readers can decide whether to read the report. The abstract should very concisely summarize the whole report: why it was written, what was discovered or developed, and what is claimed to be the significance of the effort. The abstract does not include figures or tables, and only the most significant numerical values or results should be given.
 \end{abstract}
+
+
+
+
+
+
+
+
+\section*{AI Declaration}
+
+This report was developed with the assistance of generative Artificial Intelligence tools, including ChatGPT (OpenAI) and Claude (Anthropic), to support brainstorming, report structuring, methodological planning, literature exploration, writing refinement, and coding guidance.\\
+
+The authors were responsible for defining the research objectives, selecting and processing the datasets, designing and implementing the analytical methodology, interpreting the results, and formulating the conclusions and policy recommendations. Outputs generated by AI tools were critically evaluated, adapted where necessary, and used solely as supporting resources throughout the development of the project. The authors assume full responsibility for the accuracy, originality, and integrity of the work presented in this report.\\
+
+\newpage
+
+
+
+
+\tableofcontents
+\newpage
+
+
 
 
 \section{Problem Description and Indicators}
 
-\begin{itemize}
-    \item Select a problem related to smart cities, such as traffic management, traffic prediction, energy consumption, waste management and optimization, or air pollution.
-    \item Explain the problem, its importance, and its impact on the city and its inhabitants.
-    \item Select or devise one or more indicators to measure the problem and/or the impact of a possible solution. Indicators can include, for example, traffic volume over time, air quality index, energy consumption per capita, or waste generation per household.
-    \item Consider the ethical and social implications of the problem and its related indicators.
-\end{itemize}
+% Reminder:
+% The first should describe the chosen problem, its societal significance,
+% and relevant indicators, referencing appropriate scientific sources.
 
+
+
+\subsection{Problem Description}
+%\item Select a problem related to smart cities, such as traffic management, traffic prediction, energy consumption, waste management and optimization, or air pollution.
+%\item Explain the problem, its importance, and its impact on the city and its inhabitants.
+%\item Select or devise one or more indicators to measure the problem and/or the impact of a possible solution. Indicators can include, for example, traffic volume over time, air quality index, energy consumption per capita, or waste generation per household.
+%\item Consider the ethical and social implications of the problem and its related indicators.
+
+%Parágrafo sobre wildfires como desafio de Smart Cities\\
+%Parágrafo sobre a importância da rede primária e da prevenção\\
+%Parágrafo sobre a research question e os objetivos\\
+
+
+Wildfires constitute one of the most significant environmental and territorial
+challenges affecting Portugal. The country is particularly vulnerable to wildfire
+events due to a combination of climatic, environmental, and socio-economic factors,
+including its Mediterranean climate, recurrent drought conditions, extensive forested
+areas, land abandonment processes, and vegetation accumulation. Climate change has
+increased wildfire risk across Europe, particularly in Mediterranean regions where
+prolonged droughts, heatwaves, and extreme fire weather conditions have become more
+frequent \cite{EEAForestFires2021}. According to the IPCC Sixth Assessment Report,
+Southern Europe is expected to experience increasing temperatures, more frequent and
+intense heatwaves, and more severe drought conditions, all of which contribute to
+elevated wildfire risk and longer fire seasons \cite{BednarFriedl2022Europe}. The
+structural roots of this vulnerability are also socio-economic in nature: since the
+1960s, rural exodus and rapid industrialisation left vast inland areas of northern and
+central Portugal depopulated and effectively unmanaged, driving the expansion of
+fire-prone shrublands and eucalyptus and pine plantations \cite{EnviroSociety2022}.
+Between 1980 and 2023, wildfires in mainland Portugal burned a cumulative total of
+approximately 4.99 million hectares --- an area equivalent to roughly 54\% of the
+national territory \cite{TheSignatureofClimateinAnnualBurnedAreainPortugal}. The 2017 fire season alone set an
+all-time record with approximately 540,000 hectares burned, 114 fatalities, over
+1,100 injuries, and economic losses exceeding USD~1.2~billion, making it the costliest
+natural disaster in the country's insurance history \cite{ThecompoundeventthattriggeredthedestructivefiresofOctober2017inPortugal}. More
+recently, the 2024 fire season burned over 135,000 hectares across central and northern
+Portugal in a single week \cite{AdvanceReportonForestFiresinEurope}. The OECD has estimated that
+wildfires now affect hundreds of thousands of people annually in Portugal, generate
+widespread respiratory health impacts, and represent a structural threat to forest
+ecosystems, soil integrity, and long-term territorial resilience \cite{OECD2023Portugal}.\\
+
+Prevention, rather than suppression alone, has increasingly been recognised as the
+most effective strategy for reducing the frequency and severity of wildfires. In this
+context, Portugal's Primary Fuel Management Network (\textit{Rede Primária de Faixas
+de Gestão de Combustível}, RPFGC) constitutes the central instrument of national-scale
+wildfire prevention. Established under Decree-Law No.~82/2021 and the Integrated Rural
+Fire Management System (SGIFR), the RPFGC is designed to create large-scale horizontal
+discontinuities across the landscape through the systematic removal or reduction of
+vegetation along strategic corridors \cite{ICNF_RPFGC}. Each corridor consists of a
+central forest road of approximately 6~metres, flanked by 10-metre strips cleared of
+arboreal and shrub cover, and outer 20-metre strips where canopy spacing is maintained
+above 4~metres \cite{CmPenamacor2025}. The network is intended to isolate fire
+outbreaks, protect roads, critical infrastructure and social facilities, reduce average
+burned area by compartmentalising the landscape, and improve firefighter safety
+\cite{RecuperarPortugal_C08}. Its national implementation is funded with
+120~million Euros through the Portuguese Recovery and Resilience Plan (PRR, Project
+C08-i03), targeting the establishment of 21,000~hectares of fuel management strips
+across continental Portugal \cite{Transparencia_C08}. Despite its strategic importance,
+the implementation of fuel treatments in Portugal has historically suffered from low
+execution rates, challenges related to fragmented private land ownership, and
+insufficient targeting of the territories at highest structural risk
+\cite{FrontiersPortugal2023}. These shortcomings highlight the critical need to
+evaluate whether the infrastructure being deployed is spatially aligned with zones of
+greatest wildfire risk, and whether its coverage is equitable across municipalities
+with differing socio-economic capacities.\\
+
+This study addresses these challenges by adopting a Smart Cities and Data Science
+approach to evaluate the spatial effectiveness and equity of Portugal's primary
+prevention infrastructure. Smart city frameworks have increasingly been applied to
+disaster risk management, leveraging geospatial intelligence, remote sensing, and
+data-driven methods to support more transparent, evidence-based, and equitable public
+decision-making \cite{IoTSmartCities2024}. In this context, the integration of
+wildfire risk modelling with infrastructure coverage analysis and socio-economic
+indicators represents a meaningful contribution to territorial resilience. The central
+research question guiding this study is: \textit{How effectively does Portugal's
+primary fuel management infrastructure cover high wildfire risk zones, are the gaps
+in prevention coverage disproportionately concentrated in the most economically
+vulnerable municipalities, and what targeted policy interventions could address these
+inequalities?} To answer this question, the study pursues three objectives: (1) to
+assess the spatial alignment between high wildfire risk areas and the coverage of the
+Primary Fuel Management Network, at the national scale; (2) to analyse coverage gaps at the municipal level and
+identify the municipalities with the largest proportions of unprotected high-risk
+territory; and (3) to examine whether municipalities with lower purchasing power
+exhibit systematically higher prevention coverage gaps, thereby providing evidence of
+territorial inequalities in wildfire resilience.\\
+
+\subsection{Indicators}
+
+%aqui metes:
+%- Wildfire Risk Index
+%- Coverage Ratio
+%- Gap Ratio
+%- Purchasing Power\\
+%a seguir, ainda dentro desta subsection, terminas com as implicações éticas e sociais\\
+
+To operationalise the research question, four indicators are defined and applied
+throughout the analysis. Together, they enable a quantitative assessment of wildfire
+risk exposure, prevention infrastructure coverage, and the socio-economic conditions
+of municipalities.\\
+
+
+\textbf{Wildfire Risk Index.} A composite spatial indicator that quantifies wildfire
+risk across mainland Portugal on a scale from 1 (very low) to 5 (very high). It
+is constructed by combining five input layers --- conjunctural hazard, historical
+burned areas, critical fire locations, vegetation index, and aridity index ---
+through a weighted overlay, where each layer is normalised to a common scale prior
+to combination. The primary fuel management network layer is also sourced from the
+same institution. For the coverage
+analysis, only areas classified as risk class~4 (high) or class~5 (very high)
+are considered.\\
+
+\textbf{Coverage Ratio.} The proportion of high-risk territory (classes 4--5)
+that falls within the zone of influence of the Primary Fuel Management Network
+(RPFGC), defined as a 1~km buffer around the network. A higher value indicates
+better alignment between prevention infrastructure and high-risk zones.\\
+
+\textbf{Gap Ratio.} The complement of the Coverage Ratio, quantifying the proportion
+of high-risk territory that remains outside the buffer and is therefore considered
+unprotected. It is the primary indicator used in the municipal-level equity analysis
+to identify territories where prevention coverage is insufficient relative to
+wildfire exposure.\\
+
+\textbf{Purchasing Power.} The indicator of economic vulnerability at the municipal
+level, specifically the per capita income index (IpC),
+measured relative to the national average (base~=~100).
+The index is inverted and normalised to a 0--1 scale, where 1 represents the most
+economically vulnerable municipality, and used to examine whether prevention coverage
+gaps are disproportionately concentrated in economically weaker territories.
+
+
+\subsubsection*{Ethical and Social Implications}
+
+
+The indicators selected in this study carry important ethical and social
+dimensions that extend beyond their technical definition.\\
+
+The Wildfire Risk Index concentrates the analysis on the territories of
+greatest fire danger, ensuring that prevention resources and policy attention
+are directed where they are most needed. The weighting scheme assigns the
+greatest importance to conjunctural hazard, reflecting the central role of
+dynamic climatic and meteorological conditions in determining fire danger,
+while historical burned areas and critical locations capture structural and
+recurrent risk patterns. The transparency of this construction allows results
+to be scrutinised and reproduced, which is itself an ethical requirement of
+evidence-based public policy.\\
+
+The Coverage and Gap Ratios translate infrastructure presence into a measurable
+assessment of protected versus unprotected territory. This framing is
+analytically useful but it is important to acknowledge that proximity to a
+fuel management corridor does not guarantee complete protection from wildfire.
+The use of a 1~km buffer is a transparent and operationally justified threshold,
+supported by sensitivity analysis at 500~m and 2~km, but communities just
+outside this boundary may still face significant levels of exposure.\\
+
+The use of purchasing power as a vulnerability indicator reflects a deliberate
+choice to foreground economic inequality as a lens for evaluating prevention
+equity. This is ethically significant: it positions wildfire resilience not
+merely as a technical or environmental problem, but as a social justice issue
+in which economically marginalised communities, often rural, elderly, and
+with limited institutional capacity, may bear a disproportionate share of
+wildfire risk. At the same time, vulnerability is
+multi-dimensional, and factors such as population ageing, social isolation,
+and access to emergency services are not fully captured by an economic index
+alone. Future analyses could benefit from composite vulnerability indicators
+that integrate these dimensions more comprehensively.\\
+
+Finally, the municipal scale of analysis is well suited for policy targeting,
+as it aligns with the administrative units through which prevention investment
+and governance decisions are made in Portugal. While intra-municipal variation
+may exist, the municipal level provides the most actionable and institutionally
+meaningful unit for identifying priority territories and informing resource
+allocation decisions within the Smart Cities framework.
 
 \newpage
+
+
+
+
+
+
 \section{Data Analytics, Optimization and Policy Suggestions}
-\begin{itemize}
-\item Identify and select relevant datasets that can be used to analyze the problem. If necessary, implement scraping activities to create the dataset.
-\item Clean and wrangle the data as necessary to prepare it for analysis.
-\item Use spatial and temporal analysis tools to identify any correlations or patterns in the data.
-\item Visualize the data using appropriate tools and techniques.
-\item If the problem requires it, develop a prediction model to estimate future trends and patterns.
-\item If the problem requires it, develop a classification/clustering model to assign data points to relevant classes.
-\item If the problem requires it, develop an optimization model to address the problem, such as an algorithm to assign a population of kids to the most suitable kindergarden considering multiple criteria (distance, school capacity, school facilities…).
-\item Discuss the main results.
-\item Suggest possible new policy or optimizations based on the data analysis to address the problem, such as implementing smart traffic management systems, promoting renewable energy sources, or encouraging recycling.
-\item Consider the ethical and social implications of the policy suggestions.
-\end{itemize}
-\newpage
-\section*{References}
+% Reminder:
+% The second should present the data analytics component,
+% including dataset selection, data wrangling, spatio-temporal
+% correlation analysis (if pertinent to the problem), visualization,
+% predictive or classification modeling, and policy recommendations.
+%
+% Where applicable, predictive models, classification/clustering techniques,
+% or optimization models should be developed.
+%
+% Results should be discussed in detail and compared with the literature.
+%
+% Policy recommendations should be critically discussed, considering
+% ethical and social implications.
 
-The references section should contain complete citations following standard form.  The references should be numbered and listed in the order they were cited in the body of the report. In the text of the report, a particular reference can be cited by using a numerical number in brackets as \cite{Lee2015} that corresponds to its number in the reference list. \LaTeX provides several styles to format the references
+
+%Identify and select relevant datasets that can be used to analyze the problem. If necessary, implement scraping activities to create the dataset.
+%Clean and wrangle the data as necessary to prepare it for analysis.
+%Use spatial and temporal analysis tools to identify any correlations or patterns in the data.
+%Visualize the data using appropriate tools and techniques.
+%If the problem requires it, develop a prediction model to estimate future trends and patterns.
+%If the problem requires it, develop a classification/clustering model to assign data points to relevant classes.
+%If the problem requires it, develop an optimization model to address the problem, such as an algorithm to assign a population of kids to the most suitable kindergarden considering multiple criteria (distance, school capacity, school facilities…).
+%Discuss the main results.
+%Suggest possible new policy or optimizations based on the data analysis to address the problem, such as implementing smart traffic management systems, promoting renewable energy sources, or encouraging recycling.
+%Consider the ethical and social implications of the policy suggestions.
+
+\subsection{Datasets}
+%Wildfire Risk Datasets\\
+%Primary Fuel Management Network\\
+%Municipal Boundaries\\
+%Purchasing Power Data (INE)\\
+
+
+The analysis integrates nine datasets covering wildfire risk, prevention
+infrastructure, administrative boundaries, and economic vulnerability.
+Table~\ref{tab:datasets} provides an overview of all datasets used.\\
+
+\begin{table}[h!]
+\centering
+\caption{Datasets used in the analysis}
+\label{tab:datasets}
+\begin{tabular}{llll}
+\hline
+\textbf{Dataset} & \textbf{Source} & \textbf{Format} \\
+\hline
+Burned Area Perimeters & ICNF & Shapefile \\
+Conjunctural Hazard Maps & ICNF & GeoTIFF \\
+Critical Fire Locations & ICNF & Shapefile \\
+Vegetation Index (IQV) & ICNF & Shapefile \\
+Aridity Index & ICNF & Shapefile \\
+Primary Fuel Management Network & ICNF & Shapefile \\
+Municipal Boundaries (CAOP) & DGT & Shapefile \\
+Portugal Boundaries & ArcGIS Living Atlas & Shapefile \\
+Municipal Purchasing Power (IpC) & INE & CSV \\
+\hline
+\end{tabular}
+\end{table}
+
+Burned area perimeters record the spatial extent of fire events across
+mainland Portugal for each year between 2021 and 2024, totalling 5,998
+individual fire perimeters across the four-year period. Conjunctural hazard
+maps provide annual raster layers of fire danger conditions derived from
+climatic and meteorological variables, available at 25~m resolution for
+the same period. Critical fire locations identify areas of structural
+susceptibility based on the \textit{NivelCriti} field. The vegetation index
+(\textit{Índice de Qualidade da Vegetação}, IQV) and aridity index provide
+spatial layers of fuel load and drought stress respectively, both at the
+polygon level. All five datasets, together with the Primary Fuel Management
+Network layer containing 5,529 network segments, were obtained from the
+Instituto da Conservação da Natureza e das Florestas (ICNF) \cite{ICNF}.\\
+
+Municipal boundaries were sourced from the Carta Administrativa Oficial de
+Portugal (CAOP 2024), published by the Direção-Geral do Território (DGT)
+\cite{DGT_CAOP}. This layer provides the official administrative boundaries
+for all municipalities in mainland Portugal and serves as the spatial unit
+for the municipal-level analysis.\\
+
+Purchasing power data were obtained from the INE 2023 Municipal Purchasing
+Power Study (\textit{Estudo sobre o Poder de Compra Concelhio}), which
+provides the per capita income index (IpC) for each municipality relative
+to the national average \cite{INE_PoderCompra}.\\
+
+\subsection{Data Preparation}
+Data Cleaning\\
+Spatial Harmonization\\
+Municipality-Level Integration\\
+
+
+\subsection{Wildfire Risk Assessment}
+Risk Model Construction\\
+Identification of High-Risk Areas\\
+% Figure:
+% Wildfire Risk Map
+
+
+\subsection{Prevention Coverage Analysis}
+Buffer Definition\\
+Coverage Assessment\\
+National Coverage Statistics\\
+
+% Figures:
+% Coverage Map
+% Coverage Statistics
+
+
+\subsection{Municipal-Level Analysis}
+Coverage Ratio by Municipality\\
+Gap Ratio by Municipality\\
+Identification of Priority Municipalities\\
+
+% Figures:
+% Municipal Gap Ratio Map
+% Top Municipalities by Gap Ratio
+
+\subsection{Economic Vulnerability Analysis}
+Purchasing Power Distribution\\
+Economic Vulnerability Mapping\\
+% Figures:
+% Purchasing Power Map
+% Top Lowest Purchasing Power Municipalities
+
+
+\subsection{Relationship Between Coverage Gaps and Economic Vulnerability}
+Comparative Analysis\\
+Correlation Analysis\\
+
+% Figures:
+% Scatter Plot:
+% Purchasing Power vs Gap Ratio
+
+
+\subsection{Results and Discussion}
+Coverage Effectiveness\\
+Economic Vulnerability and Prevention Gaps\\
+Comparison with Existing Literature\\
+Territorial Inequalities in Wildfire Resilience\\
+
+
+\subsection{Policy Interventions}
+Priority Municipalities for Intervention\\
+Expansion of the Primary Fuel Management Network\\
+Risk-Informed Resource Allocation\\
+Smart Monitoring and Decision Support Systems\\
+
+
+\subsection{Ethical and Social Implications of Policy Recommendations}
+Fairness in Public Investment\\
+Protection of Economically Vulnerable Municipalities\\
+Transparency and Evidence-Based Governance\\
+
+
+\newpage
+\section*{CRediT Author Statement}
+\addcontentsline{toc}{section}{CRediT Author Statement}
+
+******Author 1: Conceptualization, Methodology, Data Curation, Writing -- Original Draft.
+
+Author 2: Data Collection, Data Processing, Visualization, Writing -- Review \& Editing.
+
+Author 3: Geospatial Analysis, Validation, Investigation, Writing -- Review \& Editing.
+
+Author 4: Project Administration, Supervision, Policy Analysis, Writing -- Review \& Editing.*******
+
+\newpage
+
+
 
 \bibliographystyle{IEEEtran}
-\bibliography{references.bib}
+\bibliography{references}
+\addcontentsline{toc}{section}{References}
 
 \end{document}
