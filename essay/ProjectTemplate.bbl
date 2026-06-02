@@ -25,15 +25,15 @@
 J.~San-Miguel-Ayanz, T.~Durrant, R.~Boca, P.~Maianti, G.~Libertà,
   T.~Artés~Vivancos, D.~Oom, A.~Branco, D.~De~Rigo, D.~Ferrari, H.~Pfeiffer,
   R.~Grecchi, M.~Onida, and P.~Löffler, ``Forest fires in europe, middle east
-  and north africa 2021,'' Publications Office of the European Union, Tech.
-  Rep. EUR~31269~EN, JRC130846, 2022.
+  and north africa 2021,'' Publications Office of the European Union,
+  Luxembourg, Tech. Rep. EUR~31269~EN, JRC130846, 2022.
 
 \bibitem{BednarFriedl2022Europe}
 B.~Bednar-Friedl, R.~Biesbroek, D.~N. Schmidt, P.~Alexander, K.~Y. B{\o}rsheim,
   J.~Carnicer, E.~Georgopoulou, M.~Haasnoot, G.~Le~Cozannet, P.~Lionello,
   O.~Lipka, C.~M{\"o}llmann, V.~Muccione, T.~Mustonen, D.~Piepenburg, and
-  L.~Whitmarsh, in \emph{Climate Change 2022: Impacts, Adaptation and
-  Vulnerability. Contribution of Working Group~{II} to the Sixth Assessment
+  L.~Whitmarsh, ``Europe,'' in \emph{Climate Change 2022: Impacts, Adaptation
+  and Vulnerability. Contribution of Working Group~{II} to the Sixth Assessment
   Report of the Intergovernmental Panel on Climate Change}, H.-O. P{\"o}rtner,
   D.~C. Roberts, M.~Tignor, E.~S. Poloczanska, K.~Mintenbeck, A.~Alegr{\'i}a,
   M.~Craig, S.~Langsdorf, S.~L{\"o}schke, V.~M{\"o}ller, A.~Okem, and B.~Rama,
@@ -62,8 +62,8 @@ A.~M. Ramos, A.~Russo, C.~C. DaCamara, S.~Nunes, P.~Sousa, P.~M.~M. Soares,
 \bibitem{AdvanceReportonForestFiresinEurope}
 J.~San-Miguel-Ayanz, T.~Durrant, R.~Boca, P.~Maianti, G.~Libertà
   \emph{et~al.}, ``Advance report on forest fires in europe, middle east and
-  north africa 2024,'' Publications Office of the European Union, Tech. Rep.,
-  2025.
+  north africa 2024,'' Publications Office of the European Union, Luxembourg,
+  Tech. Rep., 2025.
 
 \bibitem{OECD2023Portugal}
 {OECD}, ``Taming wildfires in the context of climate change: The case of
@@ -105,15 +105,20 @@ F.~Zeng, C.~Pang, and H.~Tang, ``Sensors on internet of things systems for the
   \emph{Sensors}, vol.~24, no.~7, p. 2074, 2024.
 
 \bibitem{ICNF}
-{Instituto da Conservação da Natureza e das Florestas}, ``Índice de
-  aridez,'' \url{https://www.icnf.pt}, accessed June 2025.
+{Instituto da Conservação da Natureza e das Florestas}, ``Dados geoespaciais
+  -- incêndios rurais,'' \url{https://www.icnf.pt}, accessed June 2026.
 
 \bibitem{DGT_CAOP}
 {Direção-Geral do Território}, ``Carta administrativa oficial de portugal
-  (caop),'' \url{https://www.dgterritorio.gov.pt}, accessed June 2025.
+  ({CAOP} 2024),'' \url{https://www.dgterritorio.gov.pt}, 2024, accessed June
+  2026.
+
+\bibitem{ArcGISLivingAtlas}
+{Esri}, ``World countries -- {ArcGIS} living atlas of the world,''
+  \url{https://livingatlas.arcgis.com}, accessed June 2026.
 
 \bibitem{INE_PoderCompra}
 {Instituto Nacional de Estatística}, ``Estudo sobre o poder de compra
-  concelhio 2023,'' \url{https://www.ine.pt}, 2023, accessed June 2025.
+  concelhio 2023,'' \url{https://www.ine.pt}, 2023, accessed June 2026.
 
 \end{thebibliography}

@@ -37,6 +37,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{float}
 
 \begin{document}
 
@@ -103,20 +104,45 @@ Rita Pinto - 948819 - r.trindadepinto@campus.unimib.it\\[1cm]
 
 \begin{abstract}
 
-Wildfires represent a major environmental and societal challenge in Portugal, with climate change increasing the frequency and severity of fire-prone conditions. Effective prevention requires not only the identification of high-risk areas but also the equitable allocation of protective infrastructure across territories with different economic capacities. This study evaluates how effectively Portugal’s Primary Fuel Management Network covers high wildfire risk zones and investigates whether municipalities with lower purchasing power receive proportionate levels of prevention coverage.\\
 
-Using a Data Science and Smart Cities approach, the analysis integrates wildfire risk data, fuel management infrastructure, municipal boundaries, and purchasing power indicators through Python-based geospatial and statistical methods. Spatial analyses are conducted to assess the alignment between wildfire risk and prevention infrastructure, while municipality-level comparisons explore potential relationships between prevention coverage gaps and economic vulnerability.\\
+Wildfires represent a major environmental and societal challenge in
+Portugal, with climate change increasing the frequency and severity
+of fire-prone conditions. Effective prevention requires not only the
+identification of high-risk areas but also the equitable allocation
+of protective infrastructure across territories with different
+economic capacities. This study evaluates how effectively Portugal's
+Primary Fuel Management Network (RPFGC) covers high wildfire risk
+zones and investigates whether municipalities with lower purchasing
+power face disproportionate prevention coverage gaps.\\
 
-Results indicate that X percentage of high-risk areas are covered by the Primary Fuel Management Network. Municipalities with lower purchasing power were found to exhibit lower/higher levels of prevention coverage, suggesting the presence/absence of territorial inequalities in wildfire resilience. These findings highlight the importance of considering both environmental risk and socio-economic conditions when designing prevention strategies and allocating public resources.\\
+Using a Data Science and Smart Cities approach, the analysis
+integrates wildfire risk data, fuel management infrastructure,
+municipal boundaries, and purchasing power indicators through
+Python-based geospatial and statistical methods. A composite
+wildfire risk model is constructed from five spatial layers and
+classified into five risk levels, identifying a total high-risk
+area of approximately 4,327~km\textsuperscript{2} across mainland
+Portugal.\\
 
-This research contributes to the Smart Cities framework by demonstrating how geospatial intelligence and data-driven analysis can support the identification of municipalities where wildfire risk, prevention coverage gaps, and economic vulnerability intersect, enabling more targeted, equitable, and evidence-based policy interventions aimed at improving territorial resilience and climate adaptation.\\
+Results show that only 38.6\% of high-risk territory falls within
+the 1~km zone of influence of the RPFGC, leaving approximately
+2,656~km\textsuperscript{2} unprotected. The analysis finds no
+evidence that prevention gaps are disproportionately concentrated
+in the most economically vulnerable municipalities in relative
+terms. However, the municipalities with the largest absolute
+unprotected areas are all highly vulnerable interior territories,
+revealing a territorial inequality that is absolute rather than
+relative in nature.\\
 
+This research contributes to the Smart Cities framework by
+demonstrating how geospatial intelligence and data-driven analysis
+can support the identification of priority municipalities where
+wildfire risk, prevention gaps, and economic vulnerability
+intersect, enabling more targeted and evidence-based policy
+interventions to improve territorial resilience.\\
+\\
 
-%The ABSTRACT is not a part of the body of the report itself. Rather, the abstract is a brief summary of the report contents that is often separately circulated so potential readers can decide whether to read the report. The abstract should very concisely summarize the whole report: why it was written, what was discovered or developed, and what is claimed to be the significance of the effort. The abstract does not include figures or tables, and only the most significant numerical values or results should be given.
 \end{abstract}
-
-
-
 
 
 
@@ -141,21 +167,12 @@ The authors were responsible for defining the research objectives, selecting and
 
 \section{Problem Description and Indicators}
 
-% Reminder:
-% The first should describe the chosen problem, its societal significance,
-% and relevant indicators, referencing appropriate scientific sources.
+
 
 
 
 \subsection{Problem Description}
-%\item Select a problem related to smart cities, such as traffic management, traffic prediction, energy consumption, waste management and optimization, or air pollution.
-%\item Explain the problem, its importance, and its impact on the city and its inhabitants.
-%\item Select or devise one or more indicators to measure the problem and/or the impact of a possible solution. Indicators can include, for example, traffic volume over time, air quality index, energy consumption per capita, or waste generation per household.
-%\item Consider the ethical and social implications of the problem and its related indicators.
 
-%Parágrafo sobre wildfires como desafio de Smart Cities\\
-%Parágrafo sobre a importância da rede primária e da prevenção\\
-%Parágrafo sobre a research question e os objetivos\\
 
 
 Wildfires constitute one of the most significant environmental and territorial
@@ -232,12 +249,7 @@ territorial inequalities in wildfire resilience.\\
 
 \subsection{Indicators}
 
-%aqui metes:
-%- Wildfire Risk Index
-%- Coverage Ratio
-%- Gap Ratio
-%- Purchasing Power\\
-%a seguir, ainda dentro desta subsection, terminas com as implicações éticas e sociais\\
+
 
 To operationalise the research question, four indicators are defined and applied
 throughout the analysis. Together, they enable a quantitative assessment of wildfire
@@ -325,37 +337,10 @@ allocation decisions within the Smart Cities framework.
 
 
 \section{Data Analytics, Optimization and Policy Suggestions}
-% Reminder:
-% The second should present the data analytics component,
-% including dataset selection, data wrangling, spatio-temporal
-% correlation analysis (if pertinent to the problem), visualization,
-% predictive or classification modeling, and policy recommendations.
-%
-% Where applicable, predictive models, classification/clustering techniques,
-% or optimization models should be developed.
-%
-% Results should be discussed in detail and compared with the literature.
-%
-% Policy recommendations should be critically discussed, considering
-% ethical and social implications.
 
-
-%Identify and select relevant datasets that can be used to analyze the problem. If necessary, implement scraping activities to create the dataset.
-%Clean and wrangle the data as necessary to prepare it for analysis.
-%Use spatial and temporal analysis tools to identify any correlations or patterns in the data.
-%Visualize the data using appropriate tools and techniques.
-%If the problem requires it, develop a prediction model to estimate future trends and patterns.
-%If the problem requires it, develop a classification/clustering model to assign data points to relevant classes.
-%If the problem requires it, develop an optimization model to address the problem, such as an algorithm to assign a population of kids to the most suitable kindergarden considering multiple criteria (distance, school capacity, school facilities…).
-%Discuss the main results.
-%Suggest possible new policy or optimizations based on the data analysis to address the problem, such as implementing smart traffic management systems, promoting renewable energy sources, or encouraging recycling.
-%Consider the ethical and social implications of the policy suggestions.
 
 \subsection{Datasets}
-%Wildfire Risk Datasets\\
-%Primary Fuel Management Network\\
-%Municipal Boundaries\\
-%Purchasing Power Data (INE)\\
+
 
 
 The analysis integrates nine datasets covering wildfire risk, prevention
@@ -366,19 +351,19 @@ Table~\ref{tab:datasets} provides an overview of all datasets used.\\
 \centering
 \caption{Datasets used in the analysis}
 \label{tab:datasets}
-\begin{tabular}{llll}
+\begin{tabular}{lll}
 \hline
 \textbf{Dataset} & \textbf{Source} & \textbf{Format} \\
 \hline
-Burned Area Perimeters & ICNF & Shapefile \\
-Conjunctural Hazard Maps & ICNF & GeoTIFF \\
-Critical Fire Locations & ICNF & Shapefile \\
-Vegetation Index (IQV) & ICNF & Shapefile \\
-Aridity Index & ICNF & Shapefile \\
-Primary Fuel Management Network & ICNF & Shapefile \\
-Municipal Boundaries (CAOP) & DGT & Shapefile \\
-Portugal Boundaries & ArcGIS Living Atlas & Shapefile \\
-Municipal Purchasing Power (IpC) & INE & CSV \\
+Burned Area Perimeters & ICNF\cite{ICNF} & Shapefile \\
+Conjunctural Hazard Maps & ICNF\cite{ICNF} & GeoTIFF \\
+Critical Fire Locations & ICNF\cite{ICNF} & Shapefile \\
+Vegetation Index (IQV) & ICNF\cite{ICNF} & Shapefile \\
+Aridity Index & ICNF\cite{ICNF} & Shapefile \\
+Primary Fuel Management Network & ICNF\cite{ICNF} & Shapefile \\
+Municipal Boundaries (CAOP) & DGT\cite{DGT_CAOP} & Shapefile \\
+Portugal Boundaries & ArcGIS Living Atlas\cite{ArcGISLivingAtlas} & Shapefile \\
+Municipal Purchasing Power (IpC) & INE\cite{INE_PoderCompra} & CSV \\
 \hline
 \end{tabular}
 \end{table}
@@ -387,17 +372,15 @@ Burned area perimeters record the spatial extent of fire events across
 mainland Portugal for each year between 2021 and 2024, totalling 5,998
 individual fire perimeters across the four-year period. Conjunctural hazard
 maps provide annual raster layers of fire danger conditions derived from
-climatic and meteorological variables, available at 25~m resolution for
-the same period. Critical fire locations identify areas of structural
-susceptibility based on the \textit{NivelCriti} field. The vegetation index
-(\textit{Índice de Qualidade da Vegetação}, IQV) and aridity index provide
-spatial layers of fuel load and drought stress respectively, both at the
-polygon level. All five datasets, together with the Primary Fuel Management
-Network layer containing 5,529 network segments, were obtained from the
-Instituto da Conservação da Natureza e das Florestas (ICNF) \cite{ICNF}.\\
+climatic and meteorological variables. Critical fire locations identify areas
+of structural susceptibility to wildfire ignition and spread. The vegetation
+index and aridity index provide spatial layers of fuel load and drought stress
+respectively, both at the polygon level. All five datasets, together with the
+Primary Fuel Management Network, were obtained from the Instituto da
+Conservação da Natureza e das Florestas (ICNF) \cite{ICNF}.\\
 
-Municipal boundaries were sourced from the Carta Administrativa Oficial de
-Portugal (CAOP 2024), published by the Direção-Geral do Território (DGT)
+Municipal boundaries were sourced from the "Carta Administrativa Oficial de
+Portugal- CAOP" , published by the Direção-Geral do Território (DGT)
 \cite{DGT_CAOP}. This layer provides the official administrative boundaries
 for all municipalities in mainland Portugal and serves as the spatial unit
 for the municipal-level analysis.\\
@@ -408,88 +391,913 @@ provides the per capita income index (IpC) for each municipality relative
 to the national average \cite{INE_PoderCompra}.\\
 
 \subsection{Data Preparation}
-Data Cleaning\\
-Spatial Harmonization\\
-Municipality-Level Integration\\
+\subsubsection*{Data Cleaning}
+All datasets were inspected and cleaned prior to analysis to ensure consistency
+and correctness. For the conjunctural hazard rasters, nodata values were
+identified and masked separately for each annual layer, as the four yearly
+files used different encoding conventions: nodata values of 255 for 2021,
+\textit{None} for 2022, and 15 for 2023 and 2024. Zero-value pixels were
+additionally excluded, as they represent areas with no recorded hazard rather
+than genuinely low values. For the social vulnerability data, sourced from
+the INE 2023 Municipal Purchasing Power Study, raw values were parsed from a
+semicolon-delimited CSV file encoded in Latin-1, decimal commas were converted
+to floating-point numbers, and rows with missing values were removed. Municipality
+names were then normalised through Unicode accent removal and lowercasing to
+enable consistent string matching between the INE dataset and the official
+administrative boundary file, yielding a final set of 278 matched municipalities
+for the municipal-level analysis.\\
+
+\subsubsection*{Spatial Harmonisation}
+All datasets were aligned to a common spatial reference system: EPSG:3763
+(PT-TM06/ETRS89), the official Portuguese national grid, and resampled to a
+uniform 250~m resolution reference grid. The conjunctural hazard rasters were
+originally provided at 25~m resolution; to manage memory efficiently at national
+scale, all rasters were downsampled by a factor of 10 using \texttt{rasterio}'s
+out-shape resampling, reducing memory requirements by approximately 100$\times$
+while preserving the spatial patterns relevant to the analysis. A mainland Portugal
+boundary mask was derived from the national administrative boundary shapefile and
+rasterised onto the reference grid to restrict all outputs to continental territory,
+excluding the Atlantic archipelagos. All vector layers, burned area perimeters,
+critical fire locations, vegetation index, aridity index, and the primary fuel
+management network, were verified against the reference coordinate system prior
+to rasterisation.\\
+
+\subsubsection*{Municipality-Level Integration}
+Vector layers were converted to raster format at 250~m resolution using the
+hazard layer as the reference grid, via \texttt{rasterio.features.rasterize}.
+Categorical attributes were mapped to ordinal numerical values prior to
+rasterisation: the vegetation quality index (\textit{Índice de Qualidade da
+Vegetação}, IQV) was encoded on a five-point scale from \textit{Baixa}~(1) to
+\textit{Muito alta}(5), and the aridity index from \textit{Húmido}(1) to
+\textit{Semiárido}~(4). Burned area perimeters for 2021--2024 were merged into
+a single cumulative binary layer (burned~=5, unburned=~1 on the normalised
+1--5 scale). All layers were then normalised to a common 1--5 scale and combined
+through a weighted overlay to produce the composite Wildfire Risk Index, described
+in detail in Section~\ref{sec:Wildfire Risk Assessment}. Municipal-level statistics were subsequently
+computed by iterating over each municipality polygon, rasterising its boundary
+onto the reference grid, and intersecting it with the risk and coverage layers
+to extract per-municipality totals. Social vulnerability scores were joined to
+the municipal geodataframe using the normalised municipality names as the
+common key.\\
 
 
 \subsection{Wildfire Risk Assessment}
-Risk Model Construction\\
-Identification of High-Risk Areas\\
-% Figure:
-% Wildfire Risk Map
+
+
+The wildfire risk model is constructed through a weighted overlay of five
+spatial input layers, each normalised to a common 1--5 ordinal scale prior
+to combination, where 1 represents very low risk and 5 represents very
+high risk. Conjunctural hazard is derived as the pixel-wise mean of the
+four annual hazard rasters (2021--2024), normalised to a 0--1 scale before
+scaling to 1--5. Burned areas are treated as a binary layer: pixels that
+burned at least once between 2021 and 2024 receive a value of 5 (maximum
+risk), while unburned pixels receive a value of 1 (minimum risk). Critical
+fire locations are rasterised as a binary presence layer and subsequently
+normalised to the 1--5 scale, where pixels coinciding with a critical
+location receive the maximum value. The vegetation index (IQV) and aridity
+index are each normalised to 1--5 using min-max normalisation, with zero
+values treated as no-data and excluded from the calculation.
+
+Figure~\ref{fig:burned_areas} shows the spatial distribution of burned
+areas across the four-year study period.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/burned_areas_2021_2024.png}
+\caption{Burned area perimeters across mainland Portugal, 2021--2024.}
+\label{fig:burned_areas}
+\end{figure}
+\newpage
+
+
+Figure~\ref{fig:mean_hazard} shows the mean conjunctural hazard across
+the study period.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/mean_hazard.png}
+\caption{Mean conjunctural hazard index across mainland Portugal, 2021--2024.}
+\label{fig:mean_hazard}
+\end{figure}
+\newpage
+
+
+Figure~\ref{fig:vegetation_index} shows the spatial distribution of the
+vegetation index.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/vegetation_index.png}
+\caption{Vegetation index (IQV) across mainland Portugal.}
+\label{fig:vegetation_index}
+\end{figure}
+\newpage
+
+
+Figure~\ref{fig:aridity_index} shows the spatial distribution of the
+aridity index.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/aridity_index.png}
+\caption{Aridity index across mainland Portugal.}
+\label{fig:aridity_index}
+\end{figure}
+\newpage
+
+
+Figure~\ref{fig:critical_locations} shows the spatial distribution of
+critical fire locations.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/critical_locations.png}
+\caption{Critical fire locations across mainland Portugal.}
+\label{fig:critical_locations}
+\end{figure}
+
+
+
+The composite risk score is computed as a weighted overlay:
+
+\begin{equation*}
+\text{Risk} = 0.35 \times \text{Hazard} + 0.20 \times \text{Critical Locations}
++ 0.20 \times \text{Burned Areas} + 0.15 \times \text{Vegetation}
++ 0.10 \times \text{Aridity}
+\end{equation*}
+
+The weights reflect the relative contribution of each factor to wildfire
+danger. Conjunctural hazard receives the highest weight (0.35) as it
+captures the most dynamic and immediate fire danger conditions driven by
+meteorological variables. Burned areas and critical locations each receive
+a weight of 0.20, encoding historical fire recurrence and structural
+territorial susceptibility respectively. Vegetation index (0.15) reflects
+fuel availability, and aridity (0.10) encodes background climatic stress.
+Where a layer contains no-data for a given pixel, the remaining layers are
+renormalised by their combined weight, ensuring that missing data does not
+bias the composite score. The resulting continuous surface is subsequently
+discretised into five risk classes using equal interval classification.
+
+Figure~\ref{fig:risk_map} shows the final national wildfire risk map.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/wildfire_risk_map.png}
+\caption{Integrated Wildfire Risk Map for mainland Portugal (2021--2024).
+Risk classes range from 1 (Very Low) to 5 (Very High).}
+\label{fig:risk_map}
+\end{figure}
+
+
+\subsubsection*{Identification of High-Risk Areas}
+
+Following classification, only areas assigned to risk class~4 (High) or
+class~5 (Very High) are retained for the coverage analysis, as these
+represent the territories where the absence of prevention infrastructure
+carries the greatest potential consequences. Each raster pixel covers an
+area of 0.0625~km\textsuperscript{2} (250~m $\times$ 250~m), allowing
+direct conversion of pixel counts to areas in km\textsuperscript{2}.\\
+
+Figure~\ref{fig:risk_bars} shows the total area assigned to each
+risk class.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/area_by_risk_class.png}
+\caption{Total area by wildfire risk class across mainland Portugal
+(2021--2024). Classes 4 and 5 form the basis of all subsequent
+coverage analysis.}
+\label{fig:risk_bars}
+\end{figure}
+
+
 
 
 \subsection{Prevention Coverage Analysis}
-Buffer Definition\\
-Coverage Assessment\\
-National Coverage Statistics\\
 
-% Figures:
-% Coverage Map
-% Coverage Statistics
+To assess whether a high-risk area is covered by the Primary Fuel
+Management Network (RPFGC), a zone of influence is defined around the
+network's linear infrastructure using a raster buffer approach. The fuel
+network is first rasterised onto the same 250~m reference grid used for
+the risk model, assigning a value of 1 to pixels intersecting a network
+segment and 0 elsewhere. Buffer zones are then computed via binary
+dilation of the rasterised network, expanding the covered area by a
+defined number of pixels in all directions. At 250~m resolution, 2 pixels
+correspond to 500~m, 4 pixels to 1~km, and 8 pixels to 2~km.
 
+Three buffer distances are tested, 500~m, 1~km, and 2~km, to assess
+the sensitivity of coverage results to this methodological choice.
+A high-risk pixel (class 4 or 5) is classified as \textit{covered} if it
+falls within the buffer zone, and as \textit{uncovered} otherwise.
+The 1~km buffer is adopted as the primary threshold for the municipal-level
+analysis, as it represents a operationally meaningful distance within which
+fuel management infrastructure can reasonably be expected to reduce fire
+spread. Figure~\ref{fig:fuel_network} shows the spatial distribution of
+the Primary Fuel Management Network across mainland Portugal.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/fuel_network.png}
+\caption{Primary Fuel Management Network (RPFGC) across mainland Portugal.}
+\label{fig:fuel_network}
+\end{figure}
+
+
+Figure~\ref{fig:risk_fuel_overlay} shows the spatial overlap between
+the integrated wildfire risk model and the Primary Fuel Management
+Network. The map allows a direct visual assessment of the alignment
+between prevention infrastructure and high-risk zones, highlighting
+areas where the network is present within high-risk territory and,
+conversely, where high-risk areas remain without network coverage.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/risk_fuel_overlay.png}
+\caption{Spatial overlay of the integrated wildfire risk model and
+the Primary Fuel Management Network across mainland Portugal
+(2021--2024). Risk classes range from 1 (Very Low) to 5 (Very High).
+The network is shown in dark blue.}
+\label{fig:risk_fuel_overlay}
+\end{figure}
+
+
+
+
+\subsubsection*{Coverage Assessment and National Coverage Statistics}
+
+For each buffer distance, the spatial intersection between the buffer zone
+and the high-risk area (classes 4 and 5) is computed, and the covered and
+uncovered areas are calculated by multiplying pixel counts by the pixel
+area of 0.0625~km\textsuperscript{2}. Table~\ref{tab:coverage} summarises
+the national coverage statistics for each buffer distance.
+
+\begin{table}[H]
+\centering
+\caption{National coverage statistics for high-risk areas (classes 4--5)
+by buffer distance.}
+\label{tab:coverage}
+\begin{tabular}{lrrrr}
+\hline
+\textbf{Buffer} & \textbf{Total HR Area (km\textsuperscript{2})} &
+\textbf{Covered (km\textsuperscript{2})} &
+\textbf{Uncovered (km\textsuperscript{2})} &
+\textbf{Coverage (\%)} \\
+\hline
+500~m & 4,326.56 & 940.06  & 3,386.50 & 21.7 \\
+1~km  & 4,326.56 & 1,670.75 & 2,655.81 & 38.6 \\
+2~km  & 4,326.56 & 2,660.50 & 1,666.06 & 61.5 \\
+\hline
+\end{tabular}
+\end{table}
+
+At the primary 1~km threshold, the Coverage Ratio is 38.6\%, meaning that
+approximately 1,671~km\textsuperscript{2} of the 4,327~km\textsuperscript{2}
+of high-risk territory falls within the zone of influence of the network,
+while 61.4\%, corresponding to approximately
+2,656~km\textsuperscript{2},  remains unprotected. Even at the most
+generous 2~km buffer, 38.5\% of high-risk territory remains outside the
+network's zone of influence. These results indicate that, at the national
+scale, a substantial proportion of high wildfire risk territory in mainland
+Portugal is not covered by the Primary Fuel Management Network.
+Figure~\ref{fig:coverage_stacked} illustrates the covered and uncovered
+areas for each buffer distance.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/national_coverage_stacked.png}
+\caption{High-risk area coverage by buffer distance. Green bars represent
+covered area and red bars represent uncovered area (km\textsuperscript{2}).
+Percentages indicate the proportion of total high-risk area in each
+category.}
+\label{fig:coverage_stacked}
+\end{figure}
 
 \subsection{Municipal-Level Analysis}
-Coverage Ratio by Municipality\\
-Gap Ratio by Municipality\\
-Identification of Priority Municipalities\\
 
-% Figures:
-% Municipal Gap Ratio Map
-% Top Municipalities by Gap Ratio
+\subsubsection*{Coverage Ratio and Gap Ratio by Municipality}
+
+To identify which municipalities face the greatest prevention gaps,
+coverage statistics are computed at the municipal level using the 1~km
+buffer as the primary analysis distance. For each municipality, the
+high-risk area (classes 4--5), the covered portion, the uncovered portion,
+the Coverage Ratio, and the Gap Ratio are calculated by spatially
+intersecting the municipal boundaries with the high-risk mask and the
+buffer zone. Municipalities with a high-risk area below
+1~km\textsuperscript{2} are excluded from the ranking to avoid
+results dominated by very small territorial units.
+
+Figure~\ref{fig:municipal_gaps} shows the Gap Ratio map by municipality
+and the top 10 municipalities by absolute uncovered high-risk area.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../outputs/municipal_coverage_gaps.png}
+\caption{Left: Coverage Gap Ratio by municipality (1~km buffer). Right:
+Top 10 municipalities by uncovered high-risk area
+(km\textsuperscript{2}).}
+\label{fig:municipal_gaps}
+\end{figure}
+
+The municipalities with the largest absolute uncovered high-risk areas
+are concentrated in the northern and central interior of Portugal:
+Castro Daire, Guarda, Torre de Moncorvo, Montalegre, and Bragança
+among them. These are predominantly rural, inland municipalities
+characterised by high wildfire exposure, low population density, and
+limited institutional capacity, making the scale of unprotected
+high-risk territory particularly concerning.
+
 
 \subsection{Economic Vulnerability Analysis}
-Purchasing Power Distribution\\
-Economic Vulnerability Mapping\\
-% Figures:
-% Purchasing Power Map
-% Top Lowest Purchasing Power Municipalities
+
+
+\subsubsection*{Purchasing Power Distribution}
+
+Economic vulnerability at the municipal level is measured using the
+per capita income index (IpC) from the INE 2023 Municipal Purchasing
+Power Study (\textit{Estudo sobre o Poder de Compra Concelhio})
+\cite{INE_PoderCompra}. The IpC expresses the purchasing capacity of
+each municipality's resident population relative to the national
+average, which is set at a base value of 100. Municipalities with an
+IpC below 100 have below-average purchasing power and are considered
+economically vulnerable for the purposes of this study.
+
+The INE dataset is loaded and matched to the municipal boundaries
+shapefile by municipality name. To account for differences in
+accentuation and capitalisation between the two sources, municipality
+names are normalised by removing accents and converting to lowercase
+prior to matching. Municipalities that could not be matched are
+excluded from the vulnerability analysis and are represented in light
+grey in the maps. This is a known limitation when integrating datasets
+from different administrative sources, as minor inconsistencies in
+name encoding between the INE records and the DGT shapefile can
+prevent exact matching.\\
+
+Table~\ref{tab:vulnerability_top10} shows the ten most economically
+vulnerable municipalities in mainland Portugal, ranked by their
+vulnerability score. All ten municipalities have an IpC well below
+the national average of 100, with Tabuaço recording the lowest
+value (IpC~=~63.53, Vulnerability~=~1.00), followed closely by
+Penamacor, Vimioso, and Vinhais. These are predominantly small,
+rural interior municipalities with significantly below-average
+purchasing power.
+
+\begin{table}[H]
+\centering
+\caption{Top 10 most economically vulnerable municipalities,
+ranked by vulnerability score (INE 2023).}
+\label{tab:vulnerability_top10}
+\begin{tabular}{lrr}
+\hline
+\textbf{Municipality} & \textbf{IpC} & \textbf{Vulnerability Score} \\
+\hline
+Tabuaço                  & 63.53 & 1.000 \\
+Penamacor                & 63.77 & 0.998 \\
+Vimioso                  & 63.80 & 0.998 \\
+Vinhais                  & 64.26 & 0.994 \\
+Baião                    & 64.54 & 0.991 \\
+Sernancelhe              & 64.72 & 0.990 \\
+Melgaço                  & 64.90 & 0.988 \\
+Valpaços                 & 64.93 & 0.988 \\
+Santa Marta de Penaguião & 65.00 & 0.988 \\
+Celorico de Basto        & 65.08 & 0.987 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Economic Vulnerability Mapping}
+
+The IpC is inverted and normalised to a 0--1 vulnerability score,
+where 1 represents the most economically vulnerable municipality and
+0 represents the least vulnerable:
+
+\begin{equation*}
+\text{Vulnerability Score} =
+1 - \frac{\text{IpC}_i - \min(\text{IpC})}{\max(\text{IpC}) -
+\min(\text{IpC})}
+\end{equation*}
+
+This transformation ensures that all subsequent analyses use a
+consistent and comparable scale across municipalities.
+Figure~\ref{fig:vulnerability_map} shows the spatial distribution
+of vulnerability scores across mainland Portugal.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/vulnerability_map.png}
+\caption{Economic vulnerability score by municipality, based on the
+INE 2023 per capita income index (IpC). Darker colours indicate
+higher vulnerability.}
+\label{fig:vulnerability_map}
+\end{figure}
 
 
 \subsection{Relationship Between Coverage Gaps and Economic Vulnerability}
-Comparative Analysis\\
-Correlation Analysis\\
 
-% Figures:
-% Scatter Plot:
-% Purchasing Power vs Gap Ratio
+
+The relationship between prevention coverage gaps and economic
+vulnerability is central to the equity dimension of this study.
+If municipalities with lower purchasing power systematically exhibit
+higher Gap Ratios, this would suggest that the allocation of wildfire
+prevention infrastructure is spatially inequitable, leaving the
+most economically fragile territories also the least protected. Such
+a pattern would have significant implications for public policy, as
+it would indicate that communities with the least capacity to
+self-protect are also those receiving the least institutional support.
+Conversely, if no such relationship exists, it would suggest that
+the network is broadly risk-informed rather than socially biased.\\
+
+
+
+
+\subsubsection*{Correlation Analysis}
+To examine this relationship, the municipal coverage statistics
+computed using the 1~km buffer are joined with the vulnerability
+scores derived from the INE 2023 IpC index.
+The two indicators: Gap Ratio and Vulnerability Score,  are then
+compared through a scatter plot and a Pearson correlation analysis.\\
+
+Figure~\ref{fig:scatter} shows the scatter plot of Vulnerability
+Score against Gap Ratio for all municipalities with high-risk area.
+Each point represents one municipality, coloured by the size of its
+total high-risk area. A linear trend line is fitted to the data to
+assess the direction and strength of the relationship.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/scatter_vulnerability_gap.png}
+\caption{Scatter plot of economic vulnerability score versus coverage
+gap ratio by municipality. Each point represents one municipality,
+coloured by total high-risk area (km\textsuperscript{2}). The dashed
+line shows the linear trend.}
+\label{fig:scatter}
+\end{figure}
+
+The Pearson correlation between vulnerability score and Gap Ratio
+is \textbf{r~=~-0.37} (p~$<$~0.001), indicating a statistically
+significant negative relationship between economic vulnerability
+and prevention coverage gaps at the municipal level. The results
+of this analysis are discussed in detail in Section~\ref{subsec:results}.\\
+
+Table~\ref{tab:top10} presents the ten municipalities with the largest
+absolute uncovered high-risk areas, combining coverage statistics with
+their economic vulnerability scores. The municipalities are ranked by
+total uncovered area in descending order. For each municipality, the
+table reports the total high-risk area (km\textsuperscript{2}), the
+Coverage Ratio, the Gap Ratio, and the Vulnerability Score. This combined view allows a direct
+comparison between the scale of unprotected high-risk territory and
+the economic capacity of each municipality to respond to wildfire risk.
+
+\begin{table}[H]
+\centering
+\caption{Top 10 municipalities by uncovered high-risk area, with
+coverage statistics and economic vulnerability score.}
+\label{tab:top10}
+\begin{tabular}{lrrrr}
+\hline
+\textbf{Municipality} & \textbf{High Risk Area (km\textsuperscript{2})} &
+\textbf{Coverage (\%)} & \textbf{Gap (\%)} &
+\textbf{Vulnerability Score} \\
+\hline
+Castro Daire         & 153.31 & 44.6 & 55.4 & 0.96 \\
+Guarda               & 193.69 & 57.1 & 42.9 & 0.73 \\
+Torre de Moncorvo    &  95.44 & 17.9 & 82.1 & 0.95 \\
+Montalegre           & 102.56 & 26.3 & 73.7 & 0.99 \\
+Pinhel               & 108.50 & 39.5 & 60.5 & 0.94 \\
+Bragança             & 100.06 & 35.1 & 64.9 & 0.73 \\
+Vila Nova de Foz Côa &  77.88 & 24.0 & 76.0 & 0.93 \\
+Mação                & 118.06 & 50.0 & 50.0 & 0.92 \\
+São Pedro do Sul     & 112.12 & 50.7 & 49.3 & 0.90 \\
+Sabugal              & 120.69 & 55.0 & 45.0 & 0.98 \\
+\hline
+\end{tabular}
+\end{table}
+Figure~\ref{fig:heatmap} shows the correlation heatmap between all
+key municipal indicators.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{../outputs/correlation_heatmap.png}
+\caption{Correlation heatmap between municipal indicators: high-risk
+area, coverage ratio, gap ratio, and vulnerability score.}
+\label{fig:heatmap}
+\end{figure}
+
+The heatmap confirms that coverage ratio and gap ratio are perfectly
+inversely correlated by construction. Notably, municipalities with
+larger high-risk areas tend to have slightly better coverage
+(r~=~0.38), and more vulnerable municipalities also tend to have
+marginally better coverage (r~=~0.37), consistent with the finding
+that the network is concentrated where risk and vulnerability
+overlap. However, these correlations also reveal that a significant
+share of high-risk, high-vulnerability territory remains unprotected
+in absolute terms, pointing to the need for targeted expansion of
+the network in the most critical municipalities.\\
+
+
+\subsubsection*{Priority Classification}
+
+To further contextualise the relationship between coverage gaps
+and economic vulnerability, municipalities are classified into
+five priority levels for prevention investment. The classification
+combines three criteria: the Gap Ratio, the vulnerability score,
+and the total high-risk area. Only municipalities with a high-risk
+area of at least 10~km\textsuperscript{2} are included. The median
+Gap Ratio and median vulnerability score are used as thresholds
+to assign each municipality to a priority level, as follows:
+
+\begin{itemize}
+  \item \textbf{Very High:} Gap Ratio above median and vulnerability
+        above median
+  \item \textbf{High:} Gap Ratio above median or vulnerability above
+        median, but not both
+  \item \textbf{Medium:} Gap Ratio below median and vulnerability
+        above median
+  \item \textbf{Low-Medium:} Gap Ratio above median and vulnerability
+        below median
+  \item \textbf{Low:} Gap Ratio below median and vulnerability below
+        median
+\end{itemize}
+
+Figure~\ref{fig:priority_map} shows the resulting priority map and
+the top priority municipalities by uncovered high-risk area.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../outputs/priority_map.png}
+\caption{Left: Municipal priority classification for prevention
+investment. Right: Top priority municipalities by uncovered
+high-risk area (km\textsuperscript{2}).}
+\label{fig:priority_map}
+\end{figure}
+
+
+The median Gap Ratio threshold is 86.8\% and the median vulnerability
+threshold is 0.851. Table~\ref{tab:priority} summarises the resulting
+distribution of municipalities across priority levels, and
+Table~\ref{tab:veryhigh} lists the 9 Very High priority municipalities.
+
+\begin{table}[H]
+\centering
+\caption{Distribution of municipalities by priority level.}
+\label{tab:priority}
+\begin{tabular}{lr}
+\hline
+\textbf{Priority Level} & \textbf{Number of Municipalities} \\
+\hline
+Very High  & 9  \\
+High       & 35 \\
+Medium     & 92 \\
+Low-Medium & 92 \\
+Low        & 44 \\
+\hline
+\textbf{Total} & \textbf{272} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Very High priority municipalities with key indicators.}
+\label{tab:veryhigh}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Municipality} & \textbf{Gap (\%)} & \textbf{Vulnerability Score} &
+\textbf{High Risk Area (km\textsuperscript{2})} \\
+\hline
+Penafiel          & 90.6  & 0.853 & 20.62 \\
+Fafe              & 100.0 & 0.887 & 40.31 \\
+Celorico de Basto & 100.0 & 0.987 & 20.69 \\
+Ponte da Barca    & 100.0 & 0.967 & 25.75 \\
+Vila Verde        & 100.0 & 0.897 & 11.75 \\
+Póvoa de Lanhoso  & 100.0 & 0.922 & 18.62 \\
+Idanha-a-Nova     &  99.3 & 0.974 & 26.62 \\
+Vimioso           &  91.7 & 0.998 & 39.00 \\
+Miranda do Douro  &  87.8 & 0.906 & 21.50 \\
+\hline
+\end{tabular}
+\end{table}
 
 
 \subsection{Results and Discussion}
-Coverage Effectiveness\\
-Economic Vulnerability and Prevention Gaps\\
-Comparison with Existing Literature\\
-Territorial Inequalities in Wildfire Resilience\\
+\label{subsec:results}
 
 
-\subsection{Policy Interventions}
+\subsubsection*{Coverage Effectiveness}
+
+The integrated wildfire risk model identifies a total high-risk area
+(classes 4 and 5) of approximately 4,327~km\textsuperscript{2} across
+mainland Portugal, corresponding to roughly 4.7\% of the national
+territory. Class~4 (High) accounts for 3,965~km\textsuperscript{2}
+and Class~5 (Very High) for 361~km\textsuperscript{2}, while the
+majority of the territory falls within lower risk classes
+(Figure~\ref{fig:risk_bars}). As shown in Figure~\ref{fig:risk_bars},
+classes 4 and 5 together represent only 4.7\% of the national
+territory, while classes 1 and 2 account for over 75\%, indicating
+that the highest risk levels affect a relatively small but critical
+portion of mainland Portugal.
+
+At the national scale, only 38.6\% of high-risk territory falls
+within the 1~km zone of influence of the Primary Fuel Management
+Network, leaving 61.4\%,  approximately
+2,656~km\textsuperscript{2}, unprotected
+(Table~\ref{tab:coverage}, Figure~\ref{fig:coverage_stacked}).
+Even at the most generous 2~km buffer, 38.5\% of high-risk
+territory remains outside the network's zone of influence. These
+results indicate that, at the national scale, the current deployment
+of the RPFGC covers less than half of the territory most exposed to
+wildfire risk, representing a significant gap in prevention
+infrastructure. This finding is consistent with the literature
+highlighting low execution rates and insufficient targeting in
+Portuguese fuel management policy \cite{FrontiersPortugal2023}.
+
+\subsubsection*{Economic Vulnerability and Prevention Gaps}
+
+The economic vulnerability analysis reveals that mainland Portugal
+is predominantly characterised by below-average purchasing power,
+particularly in the northern and central interior
+(Figure~\ref{fig:vulnerability_map}). The most economically
+vulnerable municipalities include Tabuaço (IpC~=~63.53,
+Vulnerability~=~1.00), Penamacor (IpC~=~63.77,
+Vulnerability~=~1.00), Vimioso (IpC~=~63.80,
+Vulnerability~=~1.00), and Vinhais (IpC~=~64.26,
+Vulnerability~=~0.99), all of which are rural interior
+municipalities with significantly below-average economic capacity.
+
+The Pearson correlation between vulnerability score and Gap Ratio
+is r~=~-0.37 (p~$<$~0.001), indicating a statistically significant
+negative relationship (Figure~\ref{fig:scatter}). In the scatter
+plot, each point represents one municipality, with the X axis
+showing the vulnerability score and the Y axis showing the Gap
+Ratio. The dashed trend line slopes downward from left to right,
+meaning that as vulnerability increases, the Gap Ratio tends to
+decrease. Contrary to a simple inequality hypothesis, more
+economically vulnerable municipalities do not systematically
+exhibit larger relative coverage gaps. This is explained by the
+spatial concentration of the RPFGC in the northern and central
+interior, precisely where both wildfire risk and economic
+vulnerability are highest, suggesting that network placement
+is broadly risk-informed rather than socially biased.
+
+However, this result must be interpreted with caution. The negative
+correlation reflects relative coverage gaps --- that is, the
+percentage of each municipality's high-risk area that is
+unprotected. In relative terms, vulnerable municipalities do not
+fare worse. But when looking at the absolute area of unprotected
+high-risk land in km\textsuperscript{2}, the picture changes
+significantly. As shown in Table~\ref{tab:top10}, the
+municipalities with the largest absolute uncovered high-risk areas: Castro Daire (153~km\textsuperscript{2}, Gap~=~55.4\%,
+Vulnerability~=~0.96), Guarda (193~km\textsuperscript{2},
+Gap~=~42.9\%, Vulnerability~=~0.73), Torre de Moncorvo
+(95~km\textsuperscript{2}, Gap~=~82.1\%, Vulnerability~=~0.95),
+and Montalegre (102~km\textsuperscript{2}, Gap~=~73.7\%,
+Vulnerability~=~0.99), are all highly vulnerable interior
+municipalities. The network is present in these territories, but
+it is not large enough to cover the scale of risk that exists
+there. Since these municipalities also lack the economic capacity
+to self-protect, the result is a territorial inequality that is
+absolute rather than relative in nature.
+\subsubsection*{Territorial Inequalities in Wildfire Resilience}
+
+The correlation heatmap (Figure~\ref{fig:heatmap}) confirms that
+municipalities with larger high-risk areas tend to have slightly
+better relative coverage (r~=~0.38), and more vulnerable
+municipalities also tend to have marginally better coverage
+(r~=~0.37). While this suggests the network broadly follows
+risk and vulnerability patterns, it also reveals that a
+significant share of high-risk, high-vulnerability territory
+remains unprotected in absolute terms.
+
+The spatial distribution of Gap Ratios
+(Figure~\ref{fig:municipal_gaps}) reveals a clear geographic
+pattern: municipalities with the largest proportions of
+unprotected high-risk territory are predominantly located in
+the northern and central interior of Portugal, a region
+characterised by extensive forested areas, high wildfire
+exposure, and low population density. Coastal and southern
+municipalities tend to exhibit lower Gap Ratios, reflecting
+either lower wildfire risk or better relative coverage by
+the network.
+
+Taken together, these results suggest that while the RPFGC
+is broadly aligned with territorial risk, its current scale
+is insufficient to protect the most exposed and vulnerable
+municipalities. A municipality with over 80~km\textsuperscript{2}
+of uncovered high-risk area and a vulnerability score above
+0.95 faces a fundamentally different challenge than a coastal
+municipality with less than 1~km\textsuperscript{2} uncovered,
+even if their relative Gap Ratios appear similar. This
+distinction between relative and absolute inequality is
+central to understanding the territorial resilience challenges
+facing Portugal's interior municipalities.
+
+The priority classification identifies 9 municipalities as Very
+High priority, 35 as High priority, 92 as Medium, 92 as
+Low-Medium, and 44 as Low priority (Figure~\ref{fig:priority_map}).
+The 9 Very High priority municipalities combine above-median Gap
+Ratios, above-median vulnerability scores, and large high-risk
+areas, representing the most urgent cases for targeted prevention
+investment. The fact that only 9 municipalities fall into the Very
+High category reflects the concentration of the worst-case
+combination, high risk, low coverage, and high vulnerability,
+in a small number of interior territories, reinforcing the case
+for geographically targeted rather than uniform national
+intervention.\\
+
+
+
+These findings are broadly consistent with the existing
+literature on wildfire risk and prevention in Portugal.
+Benali et al.\ \cite{FrontiersPortugal2023} highlight the importance
+of spatially targeted fuel management interventions at the
+local scale, arguing that prevention resources must be
+concentrated where structural risk is highest
+\cite{FrontiersPortugal2023}. The OECD has similarly
+identified the need for risk-informed resource allocation
+and improved prevention infrastructure in Portugal's most
+exposed territories \cite{OECD2023Portugal}. The negative
+correlation between vulnerability and gap ratio found in
+this study partially supports the hypothesis that the
+network follows risk patterns, but the absolute scale of
+unprotected territory in high-vulnerability municipalities
+points to a need for substantial expansion of prevention
+infrastructure, consistent with the PRR investment targets
+\cite{Transparencia_C08}.
+
+\subsubsection*{Answer to the Research Question}
+
+The results show that Portugal's primary fuel management network
+covers only 38.6\% of high wildfire risk territory at the 1~km
+threshold, leaving approximately 2,656~km\textsuperscript{2}
+unprotected. The Pearson correlation between economic vulnerability
+and Gap Ratio is r~=~-0.37 (p~$<$~0.001), indicating that there
+is no evidence that prevention coverage gaps are disproportionately
+concentrated in the most economically vulnerable municipalities.
+The data does not support the hypothesis that the network
+systematically disadvantages poorer territories in relative terms.
+Nevertheless, the absolute scale of unprotected high-risk land in
+interior municipalities warrants targeted policy intervention
+regardless of this finding.
+
+
+
+
+
 Priority Municipalities for Intervention\\
 Expansion of the Primary Fuel Management Network\\
 Risk-Informed Resource Allocation\\
 Smart Monitoring and Decision Support Systems\\
+\subsection{Policy Interventions and Ethical Implications}
+
+The findings of this study point to a set of concrete and evidence-based
+policy interventions to address the identified gaps in wildfire prevention
+coverage across mainland Portugal. Each recommendation is grounded in the
+analytical results and accompanied by a discussion of its ethical and
+social implications.
+
+\subsubsection*{Targeted Expansion of the Primary Fuel Management Network}
+
+At the national scale, the RPFGC covers only 38.6\% of high-risk
+territory at the 1~km buffer threshold, leaving approximately
+2,656~km\textsuperscript{2} unprotected. The 9 Very High priority
+municipalities identified in this study: Fafe, Vimioso,
+Idanha-a-Nova, Ponte da Barca, Celorico de Basto, Miranda do Douro,
+Póvoa de Lanhoso, Vila Verde, and Penafiel, should be the immediate
+focus of prevention investment. These municipalities combine Gap Ratios
+above 87\%, vulnerability scores above 0.85, representing the worst-case combination of
+exposure, insufficient coverage, and limited economic capacity to
+self-protect. The 35 High priority municipalities should constitute
+the second tier of intervention.
+
+The PRR project C08-i03 targets the establishment of 21,000~hectares
+of fuel management strips \cite{Transparencia_C08}, but the results
+of this study suggest that this investment must be spatially targeted
+to maximise its impact. Expansion should prioritise municipalities
+with Gap Ratios above 90\% such as Fafe, Celorico de Basto, Ponte
+da Barca, Vila Verde, and Póvoa de Lanhoso, where the network is
+virtually absent from high-risk zones.
+
+From an ethical standpoint, prioritising investment based on a
+combination of risk exposure and economic vulnerability is a
+redistributive choice that explicitly acknowledges the unequal
+capacity of municipalities to respond to wildfire risk. This approach
+is consistent with principles of environmental justice and territorial
+cohesion, and reflects the responsibility of the state to direct
+public resources where they are most needed. Transparent reporting
+of coverage gaps at the municipal level, as demonstrated in this
+study, is a prerequisite for accountable governance.
+
+\subsubsection*{Risk-Informed Resource Allocation}
+
+The results demonstrate that the current network is broadly
+risk-informed --- it is concentrated where fire risk and vulnerability
+are highest. However, the absolute scale of unprotected territory in
+the most exposed municipalities reveals that risk-informed placement
+alone is insufficient without adequate investment in network density
+and extent. Resource allocation decisions should therefore be guided
+by both the Gap Ratio and the absolute uncovered area, ensuring that
+municipalities with large high-risk territories receive proportionally
+greater investment regardless of their relative coverage performance.
+
+The purchasing power index used in this study provides a practical
+proxy for identifying municipalities with limited institutional
+capacity, but future resource allocation frameworks should consider
+broader vulnerability indicators including population ageing, housing
+informality, and access to emergency services, to ensure that no
+dimension of social fragility is overlooked.
+
+\subsubsection*{Smart Monitoring and Decision Support Systems}
+
+Within the Smart Cities framework, the geospatial and data-driven
+methodology developed in this study can serve as the basis for a
+continuous monitoring and decision support system for wildfire
+prevention policy in Portugal. By regularly updating the risk model,
+coverage analysis, and vulnerability scores with new data, policymakers
+can track the evolution of coverage gaps over time, evaluate the
+impact of network expansion investments, and identify emerging
+priority territories before they become critical. Integration with
+real-time sensor data, satellite imagery, and climate projections
+would further enhance the predictive capacity of such a system
+\cite{IoTSmartCities2024}.
+
+The deployment of such systems raises important ethical considerations
+around data governance, transparency, and algorithmic accountability.
+Decisions informed by automated models must remain subject to
+democratic scrutiny, and the communities most affected by wildfire
+risk should have access to the data and analyses that shape prevention
+policy in their territories.
+
+\subsubsection*{Response to the Research Question on Policy}
+
+In response to the third component of the research question, this
+study identifies targeted expansion of the RPFGC in the 9 Very High
+and 35 High priority municipalities as the most urgent policy
+intervention. These municipalities combine high wildfire exposure,
+large unprotected areas, and high economic vulnerability, making
+them the territories where prevention investment has the greatest
+potential to reduce both environmental risk and territorial inequality.
+A risk-informed, equity-conscious, and data-driven approach to
+resource allocation, supported by smart monitoring systems,
+represents the most effective and socially just strategy for
+improving wildfire resilience across mainland Portugal.
+
+\subsection{Conclusion}
 
 
-\subsection{Ethical and Social Implications of Policy Recommendations}
-Fairness in Public Investment\\
-Protection of Economically Vulnerable Municipalities\\
-Transparency and Evidence-Based Governance\\
+This study set out to answer the following research question:
+\textit{How effectively does Portugal's primary fuel management
+infrastructure cover high wildfire risk zones, are the gaps in
+prevention coverage disproportionately concentrated in the most
+economically vulnerable municipalities, and what targeted policy
+interventions could address these inequalities?}
+
+The analysis shows that the Primary Fuel Management Network covers
+only 38.6\% of high wildfire risk territory at the 1~km threshold,
+leaving approximately 2,656~km\textsuperscript{2} unprotected. The
+evidence does not support the hypothesis that coverage gaps are
+disproportionately concentrated in the most economically vulnerable
+municipalities in relative terms, the Pearson correlation between
+vulnerability and Gap Ratio is r~=~-0.37 (p~$<$~0.001), indicating
+that the network broadly follows risk and vulnerability patterns.
+However, in absolute terms, the municipalities with the largest
+unprotected areas are all economically fragile interior territories,
+revealing a territorial inequality that is real but absolute rather
+than relative in nature.
+
+In response to the third component of the research question, the
+study identifies 9 Very High priority municipalities: Fafe,
+Vimioso, Idanha-a-Nova, Ponte da Barca, Celorico de Basto, Miranda
+do Douro, Póvoa de Lanhoso, Vila Verde, and Penafiel, as the
+most urgent targets for targeted expansion of the RPFGC. A
+risk-informed, equity-conscious, and data-driven approach to
+prevention investment, supported by smart monitoring systems,
+represents the most effective path towards reducing wildfire risk
+and territorial inequality in mainland Portugal.
 
 
 \newpage
+
 \section*{CRediT Author Statement}
 \addcontentsline{toc}{section}{CRediT Author Statement}
+All authors contributed to the development of this project.
+The specific contributions of each author are detailed below
+according to the CRediT (Contributor Roles Taxonomy) framework.\\
 
-******Author 1: Conceptualization, Methodology, Data Curation, Writing -- Original Draft.
+\textbf{Inês Maneta:} Software, Formal Analysis, Investigation,
+Writing -- Original Draft.
 
-Author 2: Data Collection, Data Processing, Visualization, Writing -- Review \& Editing.
+\textbf{João Sousa:} Software, Validation, Writing -- Original
+Draft, Writing -- Review \& Editing.
 
-Author 3: Geospatial Analysis, Validation, Investigation, Writing -- Review \& Editing.
+\textbf{Marta Dias:} Software, Data Curation, Visualization,
+Writing -- Original Draft.
 
-Author 4: Project Administration, Supervision, Policy Analysis, Writing -- Review \& Editing.*******
+\textbf{Rita Pinto:} Conceptualization, Methodology, Software,
+Project Administration, Writing -- Original Draft.
+\addcontentsline{toc}{section}{CRediT Author Statement}
+
+
 
 \newpage
-
 
 
 \bibliographystyle{IEEEtran}
