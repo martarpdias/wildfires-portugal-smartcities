@@ -126,13 +126,13 @@ Portugal.\\
 
 Results show that only 38.6\% of high-risk territory falls within
 the 1~km zone of influence of the RPFGC, leaving approximately
-2,656~km\textsuperscript{2} unprotected. The analysis finds no
-evidence that prevention gaps are disproportionately concentrated
-in the most economically vulnerable municipalities in relative
-terms. However, the municipalities with the largest absolute
-unprotected areas are all highly vulnerable interior territories,
-revealing a territorial inequality that is absolute rather than
-relative in nature.\\
+2,656~km\textsuperscript{2} unprotected. In relative terms, no
+evidence is found that prevention gaps are disproportionately
+concentrated in economically vulnerable municipalities
+(r~=~-0.37, p~$<$~0.001). However, in absolute terms, more
+vulnerable municipalities carry significantly larger unprotected
+areas (r~=~0.30, p~$<$~0.001), revealing a territorial inequality
+that is absolute rather than relative in nature.\\
 
 This research contributes to the Smart Cities framework by
 demonstrating how geospatial intelligence and data-driven analysis
@@ -868,6 +868,30 @@ significant negative relationship between economic vulnerability
 and prevention coverage gaps at the municipal level. The results
 of this analysis are discussed in detail in Section~\ref{subsec:results}.\\
 
+
+Figure~\ref{fig:scatter_absolute} complements the previous analysis
+by examining the relationship between economic vulnerability and the
+absolute area of unprotected high-risk territory per municipality.
+Unlike Figure~\ref{fig:scatter}, which shows the relative Gap Ratio,
+this plot reveals the absolute scale of the problem. The Pearson
+correlation is r~=~0.30 (p~$<$~0.001), indicating a statistically
+significant positive relationship: more economically vulnerable
+municipalities tend to have larger absolute unprotected high-risk
+areas. The darkest points concentrate in the upper right corner,
+representing large, poor, interior municipalities such as Castro
+Daire, Guarda, Torre de Moncorvo, and Montalegre, which combine
+high economic vulnerability with the largest absolute prevention gaps.\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{../outputs/scatter_vulnerability_absolute.png}
+\caption{Scatter plot of economic vulnerability score versus
+absolute uncovered high-risk area (km\textsuperscript{2}) by
+municipality. Point colour indicates total high-risk area size.
+The dashed line shows the linear trend (r~=~0.30, p~$<$~0.001).}
+\label{fig:scatter_absolute}
+\end{figure}
+
 Table~\ref{tab:top10} presents the ten municipalities with the largest
 absolute uncovered high-risk areas, combining coverage statistics with
 their economic vulnerability scores. The municipalities are ranked by
@@ -1068,16 +1092,21 @@ interior, precisely where both wildfire risk and economic
 vulnerability are highest, suggesting that network placement
 is broadly risk-informed rather than socially biased.
 
-However, this result must be interpreted with caution. The negative
-correlation reflects relative coverage gaps --- that is, the
-percentage of each municipality's high-risk area that is
-unprotected. In relative terms, vulnerable municipalities do not
-fare worse. But when looking at the absolute area of unprotected
-high-risk land in km\textsuperscript{2}, the picture changes
-significantly. As shown in Table~\ref{tab:top10}, the
-municipalities with the largest absolute uncovered high-risk areas: Castro Daire (153~km\textsuperscript{2}, Gap~=~55.4\%,
-Vulnerability~=~0.96), Guarda (193~km\textsuperscript{2},
-Gap~=~42.9\%, Vulnerability~=~0.73), Torre de Moncorvo
+However, this result must be interpreted alongside the absolute
+dimension of coverage gaps. A complementary analysis of the
+relationship between vulnerability and absolute uncovered area
+yields a positive correlation of r~=~0.30 (p~$<$~0.001)
+(Figure~\ref{fig:scatter_absolute}), indicating that more vulnerable
+municipalities carry significantly larger absolute unprotected areas.
+The two correlations together tell a complete story: the network
+broadly follows risk patterns in relative terms, but the absolute
+burden of unprotected high-risk territory falls disproportionately
+on the most economically fragile municipalities. As shown in
+Table~\ref{tab:top10}, the municipalities with the largest absolute
+uncovered high-risk areas: Castro Daire
+(153~km\textsuperscript{2}, Gap~=~55.4\%, Vulnerability~=~0.96),
+Guarda (193~km\textsuperscript{2}, Gap~=~42.9\%,
+Vulnerability~=~0.73), Torre de Moncorvo
 (95~km\textsuperscript{2}, Gap~=~82.1\%, Vulnerability~=~0.95),
 and Montalegre (102~km\textsuperscript{2}, Gap~=~73.7\%,
 Vulnerability~=~0.99), are all highly vulnerable interior
@@ -1282,16 +1311,17 @@ interventions could address these inequalities?}
 
 The analysis shows that the Primary Fuel Management Network covers
 only 38.6\% of high wildfire risk territory at the 1~km threshold,
-leaving approximately 2,656~km\textsuperscript{2} unprotected. The
-evidence does not support the hypothesis that coverage gaps are
-disproportionately concentrated in the most economically vulnerable
-municipalities in relative terms, the Pearson correlation between
-vulnerability and Gap Ratio is r~=~-0.37 (p~$<$~0.001), indicating
-that the network broadly follows risk and vulnerability patterns.
-However, in absolute terms, the municipalities with the largest
-unprotected areas are all economically fragile interior territories,
-revealing a territorial inequality that is real but absolute rather
-than relative in nature.
+leaving approximately 2,656~km\textsuperscript{2} unprotected. In
+relative terms, the evidence does not support the hypothesis that
+coverage gaps are disproportionately concentrated in the most
+economically vulnerable municipalities (r~=~-0.37, p~$<$~0.001),
+indicating that the network broadly follows risk patterns. However,
+in absolute terms, more vulnerable municipalities carry significantly
+larger unprotected areas (r~=~0.30, p~$<$~0.001), revealing a
+territorial inequality that is real but absolute rather than relative
+in nature. The absolute burden of unprotected high-risk territory
+falls disproportionately on the most economically fragile interior
+municipalities, which also lack the capacity to self-protect.
 
 In response to the third component of the research question, the
 study identifies 9 Very High priority municipalities: Fafe,

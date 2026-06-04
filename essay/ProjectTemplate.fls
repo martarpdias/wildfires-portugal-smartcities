@@ -333,6 +333,13 @@ INPUT ..\outputs\scatter_vulnerability_gap.png
 INPUT ..\outputs\scatter_vulnerability_gap.png
 INPUT ..\outputs\scatter_vulnerability_gap.png
 INPUT ..\outputs\scatter_vulnerability_gap.png
+INPUT ..\outputs\scatter_vulnerability_absolute.png
+INPUT ..\outputs\scatter_vulnerability_absolute.png
+INPUT ..\outputs\scatter_vulnerability_absolute.png
+INPUT ..\outputs\scatter_vulnerability_absolute.png
+INPUT ..\outputs\scatter_vulnerability_absolute.png
+INPUT ..\outputs\scatter_vulnerability_absolute.png
+INPUT ..\outputs\scatter_vulnerability_absolute.png
 INPUT ..\outputs\correlation_heatmap.png
 INPUT ..\outputs\correlation_heatmap.png
 INPUT ..\outputs\correlation_heatmap.png
@@ -368,6 +375,8 @@ INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
+INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi9.pfb
 INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\ritap\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb

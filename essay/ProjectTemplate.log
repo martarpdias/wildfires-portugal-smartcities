@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  3 JUN 2026 00:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  4 JUN 2026 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1031,156 +1031,172 @@ Underfull \hbox (badness 10000) in paragraph at lines 388--392
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--409
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--424
+Underfull \hbox (badness 10000) in paragraph at lines 400--415
 
  []
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 422--437
 
-LaTeX Warning: Reference `sec:Wildfire Risk Assessment' on page 6 undefined on input line 436.
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--442
+Underfull \hbox (badness 10000) in paragraph at lines 439--444
+
+ []
+
+
+LaTeX Warning: Reference `sec:Wildfire Risk Assessment' on page 6 undefined on input line 458.
+
+
+LaTeX Warning: Reference `sec:risk' on page 6 undefined on input line 465.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--472
 
  []
 
 <../outputs/burned_areas_2021_2024.png, id=35, 420.1296pt x 714.9912pt>
 File: ../outputs/burned_areas_2021_2024.png Graphic file (type png)
 <use ../outputs/burned_areas_2021_2024.png>
-Package pdftex.def Info: ../outputs/burned_areas_2021_2024.png  used on input line 466.
+Package pdftex.def Info: ../outputs/burned_areas_2021_2024.png  used on input line 496.
 (pdftex.def)             Requested size: 411.14528pt x 699.70471pt.
 [6]
 Overfull \vbox (20.86607pt too high) has occurred while \output is active []
 
  [7 <../outputs/burned_areas_2021_2024.png>]
-<../outputs/mean_hazard.png, id=46, 578.16pt x 722.7pt>
+<../outputs/mean_hazard.png, id=47, 578.16pt x 722.7pt>
 File: ../outputs/mean_hazard.png Graphic file (type png)
 <use ../outputs/mean_hazard.png>
-Package pdftex.def Info: ../outputs/mean_hazard.png  used on input line 478.
+Package pdftex.def Info: ../outputs/mean_hazard.png  used on input line 508.
 (pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
  [8 <../outputs/mean_hazard.png>]
-<../outputs/vegetation_index.png, id=51, 578.16pt x 722.7pt>
+<../outputs/vegetation_index.png, id=52, 578.16pt x 722.7pt>
 File: ../outputs/vegetation_index.png Graphic file (type png)
 <use ../outputs/vegetation_index.png>
-Package pdftex.def Info: ../outputs/vegetation_index.png  used on input line 490.
+Package pdftex.def Info: ../outputs/vegetation_index.png  used on input line 520.
 (pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
  [9 <../outputs/vegetation_index.png>]
-<../outputs/aridity_index.png, id=56, 578.16pt x 722.7pt>
+<../outputs/aridity_index.png, id=57, 578.16pt x 722.7pt>
 File: ../outputs/aridity_index.png Graphic file (type png)
 <use ../outputs/aridity_index.png>
-Package pdftex.def Info: ../outputs/aridity_index.png  used on input line 502.
+Package pdftex.def Info: ../outputs/aridity_index.png  used on input line 532.
 (pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
  [10 <../outputs/aridity_index.png>]
-<../outputs/critical_locations.png, id=61, 578.16pt x 722.7pt>
+<../outputs/critical_locations.png, id=62, 578.16pt x 722.7pt>
 File: ../outputs/critical_locations.png Graphic file (type png)
 <use ../outputs/critical_locations.png>
-Package pdftex.def Info: ../outputs/critical_locations.png  used on input line 514.
+Package pdftex.def Info: ../outputs/critical_locations.png  used on input line 544.
 (pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
  [11 <../outputs/critical_locations.png>]
-<../outputs/wildfire_risk_map.png, id=67, 463.4916pt x 714.9912pt>
+<../outputs/wildfire_risk_map.png, id=68, 463.4916pt x 714.9912pt>
 File: ../outputs/wildfire_risk_map.png Graphic file (type png)
 <use ../outputs/wildfire_risk_map.png>
-Package pdftex.def Info: ../outputs/wildfire_risk_map.png  used on input line 545.
+Package pdftex.def Info: ../outputs/wildfire_risk_map.png  used on input line 575.
 (pdftex.def)             Requested size: 411.14528pt x 634.2673pt.
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 554--560
+Underfull \hbox (badness 10000) in paragraph at lines 584--590
 
  []
 
 [13 <../outputs/wildfire_risk_map.png>]
-<../outputs/area_by_risk_class.png, id=76, 650.43pt x 361.35pt>
+<../outputs/area_by_risk_class.png, id=77, 650.43pt x 361.35pt>
 File: ../outputs/area_by_risk_class.png Graphic file (type png)
 <use ../outputs/area_by_risk_class.png>
-Package pdftex.def Info: ../outputs/area_by_risk_class.png  used on input line 566.
+Package pdftex.def Info: ../outputs/area_by_risk_class.png  used on input line 596.
 (pdftex.def)             Requested size: 411.14528pt x 228.41812pt.
-<../outputs/fuel_network.png, id=77, 578.16pt x 722.7pt>
+<../outputs/fuel_network.png, id=78, 578.16pt x 722.7pt>
 File: ../outputs/fuel_network.png Graphic file (type png)
 <use ../outputs/fuel_network.png>
-Package pdftex.def Info: ../outputs/fuel_network.png  used on input line 600.
+Package pdftex.def Info: ../outputs/fuel_network.png  used on input line 630.
 (pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
  [14 <../outputs/area_by_risk_class.png>]
-<../outputs/risk_fuel_overlay.png, id=83, 514.0806pt x 714.9912pt>
+<../outputs/risk_fuel_overlay.png, id=84, 514.0806pt x 714.9912pt>
 File: ../outputs/risk_fuel_overlay.png Graphic file (type png)
 <use ../outputs/risk_fuel_overlay.png>
-Package pdftex.def Info: ../outputs/risk_fuel_overlay.png  used on input line 615.
+Package pdftex.def Info: ../outputs/risk_fuel_overlay.png  used on input line 645.
 (pdftex.def)             Requested size: 411.14528pt x 571.841pt.
  [15 <../outputs/fuel_network.png>] [16 <../outputs/risk_fuel_overlay.png>]
-<../outputs/national_coverage_stacked.png, id=92, 578.16pt x 361.35pt>
+<../outputs/national_coverage_stacked.png, id=93, 578.16pt x 361.35pt>
 File: ../outputs/national_coverage_stacked.png Graphic file (type png)
 <use ../outputs/national_coverage_stacked.png>
-Package pdftex.def Info: ../outputs/national_coverage_stacked.png  used on input line 667.
+Package pdftex.def Info: ../outputs/national_coverage_stacked.png  used on input line 697.
 (pdftex.def)             Requested size: 411.14528pt x 256.9628pt.
-<../outputs/municipal_coverage_gaps.png, id=93, 1300.86pt x 578.16pt>
+<../outputs/municipal_coverage_gaps.png, id=94, 1300.86pt x 578.16pt>
 File: ../outputs/municipal_coverage_gaps.png Graphic file (type png)
 <use ../outputs/municipal_coverage_gaps.png>
-Package pdftex.def Info: ../outputs/municipal_coverage_gaps.png  used on input line 694.
+Package pdftex.def Info: ../outputs/municipal_coverage_gaps.png  used on input line 724.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
  [17 <../outputs/national_coverage_stacked.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 724--734
+Underfull \hbox (badness 10000) in paragraph at lines 754--764
 
  []
 
 [18 <../outputs/municipal_coverage_gaps.png>]
-<../outputs/vulnerability_map.png, id=104, 578.16pt x 722.7pt>
+<../outputs/vulnerability_map.png, id=105, 578.16pt x 722.7pt>
 File: ../outputs/vulnerability_map.png Graphic file (type png)
 <use ../outputs/vulnerability_map.png>
-Package pdftex.def Info: ../outputs/vulnerability_map.png  used on input line 786.
+Package pdftex.def Info: ../outputs/vulnerability_map.png  used on input line 816.
 (pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
  [19]
-Underfull \hbox (badness 10000) in paragraph at lines 797--808
+Underfull \hbox (badness 10000) in paragraph at lines 827--838
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 813--818
+Underfull \hbox (badness 10000) in paragraph at lines 843--848
 
  []
 
 [20 <../outputs/vulnerability_map.png>]
-<../outputs/scatter_vulnerability_gap.png, id=113, 722.7pt x 505.89pt>
+<../outputs/scatter_vulnerability_gap.png, id=114, 722.7pt x 505.89pt>
 File: ../outputs/scatter_vulnerability_gap.png Graphic file (type png)
 <use ../outputs/scatter_vulnerability_gap.png>
-Package pdftex.def Info: ../outputs/scatter_vulnerability_gap.png  used on input line 827.
+Package pdftex.def Info: ../outputs/scatter_vulnerability_gap.png  used on input line 857.
 (pdftex.def)             Requested size: 411.14528pt x 287.8045pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 835--840
+Underfull \hbox (badness 10000) in paragraph at lines 865--870
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 872--884
+
+ []
+
+<../outputs/scatter_vulnerability_absolute.png, id=115, 722.7pt x 505.89pt>
+File: ../outputs/scatter_vulnerability_absolute.png Graphic file (type png)
+<use ../outputs/scatter_vulnerability_absolute.png>
+Package pdftex.def Info: ../outputs/scatter_vulnerability_absolute.png  used on input line 887.
+(pdftex.def)             Requested size: 411.14528pt x 287.8045pt.
 [21 <../outputs/scatter_vulnerability_gap.png>]
-<../outputs/correlation_heatmap.png, id=118, 505.89pt x 433.62pt>
+<../outputs/correlation_heatmap.png, id=120, 505.89pt x 433.62pt>
 File: ../outputs/correlation_heatmap.png Graphic file (type png)
 <use ../outputs/correlation_heatmap.png>
-Package pdftex.def Info: ../outputs/correlation_heatmap.png  used on input line 879.
+Package pdftex.def Info: ../outputs/correlation_heatmap.png  used on input line 933.
 (pdftex.def)             Requested size: 362.77264pt x 310.95564pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--895
+ [22 <../outputs/scatter_vulnerability_absolute.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 939--949
 
  []
 
-[22 <../outputs/correlation_heatmap.png>]
-<../outputs/priority_map.png, id=123, 1300.86pt x 578.16pt>
+<../outputs/priority_map.png, id=125, 1300.86pt x 578.16pt>
 File: ../outputs/priority_map.png Graphic file (type png)
 <use ../outputs/priority_map.png>
-Package pdftex.def Info: ../outputs/priority_map.png  used on input line 926.
+Package pdftex.def Info: ../outputs/priority_map.png  used on input line 980.
 (pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
- [23 <../outputs/priority_map.png>] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1105
+[23 <../outputs/correlation_heatmap.png>] [24 <../outputs/priority_map.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1152--1164
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1145--1149
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1208
 
  []
 
-[25] [26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1281--1284
+[26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 1341--1344
 
  []
 
@@ -1225,17 +1241,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15113 strings out of 467683
- 309929 string characters out of 5414721
- 713713 words of memory out of 5000000
- 43895 multiletter control sequences out of 15000+600000
+ 15122 strings out of 467683
+ 310324 string characters out of 5414721
+ 713740 words of memory out of 5000000
+ 43904 multiletter control sequences out of 15000+600000
  635592 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,108p,628b,318s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ritap\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ProjectTemplate.pdf (31 pages, 5742505 bytes).
+ <C:\Users\ritap\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ProjectTemplate.pdf (31 pages, 5885544 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
+ 229 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
