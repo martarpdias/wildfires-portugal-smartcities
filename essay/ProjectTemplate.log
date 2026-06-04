@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  4 JUN 2026 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  4 JUN 2026 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -927,27 +927,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--126
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--136
+Underfull \hbox (badness 10000) in paragraph at lines 127--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
+Underfull \hbox (badness 10000) in paragraph at lines 148--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--144
+Underfull \hbox (badness 10000) in paragraph at lines 148--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
@@ -956,302 +956,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \openout4 = `ProjectTemplate.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 178--204
+Underfull \hbox (badness 10000) in paragraph at lines 189--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--229
+Underfull \hbox (badness 10000) in paragraph at lines 216--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--249
+Underfull \hbox (badness 10000) in paragraph at lines 241--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--258
+Underfull \hbox (badness 10000) in paragraph at lines 265--269
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 260--269
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--274
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--280
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--294
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--304
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--312
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--324
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 346--349
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--381
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 382--387
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--392
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--415
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 422--437
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--444
-
- []
-
-
-LaTeX Warning: Reference `sec:Wildfire Risk Assessment' on page 6 undefined on input line 458.
-
-
-LaTeX Warning: Reference `sec:risk' on page 6 undefined on input line 465.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--472
-
- []
-
-<../outputs/burned_areas_2021_2024.png, id=35, 420.1296pt x 714.9912pt>
-File: ../outputs/burned_areas_2021_2024.png Graphic file (type png)
-<use ../outputs/burned_areas_2021_2024.png>
-Package pdftex.def Info: ../outputs/burned_areas_2021_2024.png  used on input line 496.
-(pdftex.def)             Requested size: 411.14528pt x 699.70471pt.
-[6]
-Overfull \vbox (20.86607pt too high) has occurred while \output is active []
-
- [7 <../outputs/burned_areas_2021_2024.png>]
-<../outputs/mean_hazard.png, id=47, 578.16pt x 722.7pt>
-File: ../outputs/mean_hazard.png Graphic file (type png)
-<use ../outputs/mean_hazard.png>
-Package pdftex.def Info: ../outputs/mean_hazard.png  used on input line 508.
-(pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
- [8 <../outputs/mean_hazard.png>]
-<../outputs/vegetation_index.png, id=52, 578.16pt x 722.7pt>
-File: ../outputs/vegetation_index.png Graphic file (type png)
-<use ../outputs/vegetation_index.png>
-Package pdftex.def Info: ../outputs/vegetation_index.png  used on input line 520.
-(pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
- [9 <../outputs/vegetation_index.png>]
-<../outputs/aridity_index.png, id=57, 578.16pt x 722.7pt>
-File: ../outputs/aridity_index.png Graphic file (type png)
-<use ../outputs/aridity_index.png>
-Package pdftex.def Info: ../outputs/aridity_index.png  used on input line 532.
-(pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
- [10 <../outputs/aridity_index.png>]
-<../outputs/critical_locations.png, id=62, 578.16pt x 722.7pt>
-File: ../outputs/critical_locations.png Graphic file (type png)
-<use ../outputs/critical_locations.png>
-Package pdftex.def Info: ../outputs/critical_locations.png  used on input line 544.
-(pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
- [11 <../outputs/critical_locations.png>]
-<../outputs/wildfire_risk_map.png, id=68, 463.4916pt x 714.9912pt>
-File: ../outputs/wildfire_risk_map.png Graphic file (type png)
-<use ../outputs/wildfire_risk_map.png>
-Package pdftex.def Info: ../outputs/wildfire_risk_map.png  used on input line 575.
-(pdftex.def)             Requested size: 411.14528pt x 634.2673pt.
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 584--590
-
- []
-
-[13 <../outputs/wildfire_risk_map.png>]
-<../outputs/area_by_risk_class.png, id=77, 650.43pt x 361.35pt>
-File: ../outputs/area_by_risk_class.png Graphic file (type png)
-<use ../outputs/area_by_risk_class.png>
-Package pdftex.def Info: ../outputs/area_by_risk_class.png  used on input line 596.
-(pdftex.def)             Requested size: 411.14528pt x 228.41812pt.
-<../outputs/fuel_network.png, id=78, 578.16pt x 722.7pt>
-File: ../outputs/fuel_network.png Graphic file (type png)
-<use ../outputs/fuel_network.png>
-Package pdftex.def Info: ../outputs/fuel_network.png  used on input line 630.
-(pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
- [14 <../outputs/area_by_risk_class.png>]
-<../outputs/risk_fuel_overlay.png, id=84, 514.0806pt x 714.9912pt>
-File: ../outputs/risk_fuel_overlay.png Graphic file (type png)
-<use ../outputs/risk_fuel_overlay.png>
-Package pdftex.def Info: ../outputs/risk_fuel_overlay.png  used on input line 645.
-(pdftex.def)             Requested size: 411.14528pt x 571.841pt.
- [15 <../outputs/fuel_network.png>] [16 <../outputs/risk_fuel_overlay.png>]
-<../outputs/national_coverage_stacked.png, id=93, 578.16pt x 361.35pt>
-File: ../outputs/national_coverage_stacked.png Graphic file (type png)
-<use ../outputs/national_coverage_stacked.png>
-Package pdftex.def Info: ../outputs/national_coverage_stacked.png  used on input line 697.
-(pdftex.def)             Requested size: 411.14528pt x 256.9628pt.
-<../outputs/municipal_coverage_gaps.png, id=94, 1300.86pt x 578.16pt>
-File: ../outputs/municipal_coverage_gaps.png Graphic file (type png)
-<use ../outputs/municipal_coverage_gaps.png>
-Package pdftex.def Info: ../outputs/municipal_coverage_gaps.png  used on input line 724.
-(pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
- [17 <../outputs/national_coverage_stacked.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 754--764
-
- []
-
-[18 <../outputs/municipal_coverage_gaps.png>]
-<../outputs/vulnerability_map.png, id=105, 578.16pt x 722.7pt>
-File: ../outputs/vulnerability_map.png Graphic file (type png)
-<use ../outputs/vulnerability_map.png>
-Package pdftex.def Info: ../outputs/vulnerability_map.png  used on input line 816.
-(pdftex.def)             Requested size: 411.14528pt x 513.9256pt.
- [19]
-Underfull \hbox (badness 10000) in paragraph at lines 827--838
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 843--848
-
- []
-
-[20 <../outputs/vulnerability_map.png>]
-<../outputs/scatter_vulnerability_gap.png, id=114, 722.7pt x 505.89pt>
-File: ../outputs/scatter_vulnerability_gap.png Graphic file (type png)
-<use ../outputs/scatter_vulnerability_gap.png>
-Package pdftex.def Info: ../outputs/scatter_vulnerability_gap.png  used on input line 857.
-(pdftex.def)             Requested size: 411.14528pt x 287.8045pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 865--870
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 872--884
-
- []
-
-<../outputs/scatter_vulnerability_absolute.png, id=115, 722.7pt x 505.89pt>
-File: ../outputs/scatter_vulnerability_absolute.png Graphic file (type png)
-<use ../outputs/scatter_vulnerability_absolute.png>
-Package pdftex.def Info: ../outputs/scatter_vulnerability_absolute.png  used on input line 887.
-(pdftex.def)             Requested size: 411.14528pt x 287.8045pt.
-[21 <../outputs/scatter_vulnerability_gap.png>]
-<../outputs/correlation_heatmap.png, id=120, 505.89pt x 433.62pt>
-File: ../outputs/correlation_heatmap.png Graphic file (type png)
-<use ../outputs/correlation_heatmap.png>
-Package pdftex.def Info: ../outputs/correlation_heatmap.png  used on input line 933.
-(pdftex.def)             Requested size: 362.77264pt x 310.95564pt.
- [22 <../outputs/scatter_vulnerability_absolute.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 939--949
-
- []
-
-<../outputs/priority_map.png, id=125, 1300.86pt x 578.16pt>
-File: ../outputs/priority_map.png Graphic file (type png)
-<use ../outputs/priority_map.png>
-Package pdftex.def Info: ../outputs/priority_map.png  used on input line 980.
-(pdftex.def)             Requested size: 483.69687pt x 214.97449pt.
-[23 <../outputs/correlation_heatmap.png>] [24 <../outputs/priority_map.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1164
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1208
-
- []
-
-[26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 1341--1344
-
- []
-
-[28] (ProjectTemplate.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
-[]\OT1/cmr/m/n/10 Recuperar Por-tu-gal, ``RE-C08-i03 -- faixas de gest~ao de com-bust^^S^^Pvel -- rede prim^^Saria,''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
-\OT1/cmr/m/n/10 https://recuperarportugal.gov.pt/prr-resiliencia/florestas/re-c08-i03-faixas-de-gestao-de-combustivel-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--95
-[]\OT1/cmr/m/n/10 Portal da Transpar^encia, ``Pro-jeto PRR C08-i03 -- faixas de gest~ao de com-bust^^S^^Pvel,''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--95
-\OT1/cmr/m/n/10 https://transparencia.gov.pt/pt/fundos-europeus/prr/beneficiarios-projetos/projeto/C08-i03/, ac-cessed
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 108--110
-[]\OT1/cmr/m/n/10 Instituto da Con-serva^^Xc~ao da Na-tureza e das Flo-restas, ``Da-dos geoes-pa-ci-ais -- inc^endios ru-rais,''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--115
-[]\OT1/cmr/m/n/10 Dire^^Xc~ao-Geral do Ter-rit^^Sorio, ``Carta ad-min-is-tra-tiva ofi-cial de por-tu-gal (CAOP 2024),''
- []
-
-[29]) [30] (ProjectTemplate.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-04-28>
- ***********
-
-
-LaTeX Warning: There were undefined references.
-
- ) 
-Here is how much of TeX's memory you used:
- 15122 strings out of 467683
- 310324 string characters out of 5414721
- 713740 words of memory out of 5000000
- 43904 multiletter control sequences out of 15000+600000
- 635592 words of font info for 67 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,12n,108p,628b,318s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ritap\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ProjectTemplate.pdf (31 pages, 5885544 bytes).
-PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Underfull \hbox (b
