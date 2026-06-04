@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex ProjectTemplate"] 1780585913.7834 "ProjectTemplate.aux" "ProjectTemplate.bbl" "ProjectTemplate" 1780586197.63996 0
+["bibtex ProjectTemplate"] 1780597184.53899 "ProjectTemplate.aux" "ProjectTemplate.bbl" "ProjectTemplate" 1780597192.57176 0
   "./references.bib" 1780439294 7506 24a0f84e0393b0487b2fc5c3a169d88d ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "ProjectTemplate.aux" 1780586196 10029 55eac02b824baf354bf826bbc9edf7e4 "pdflatex"
+  "ProjectTemplate.aux" 1780597191 9933 b7bf7c3a8c8f40d2a1935c798e4f980e "pdflatex"
   (generated)
   "ProjectTemplate.bbl"
   "ProjectTemplate.blg"
   (rewritten before read)
-["pdflatex"] 1780586186.87639 "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" "ProjectTemplate.pdf" "ProjectTemplate" 1780586197.641 0
+["pdflatex"] 1780597185.12934 "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" "ProjectTemplate.pdf" "ProjectTemplate" 1780597192.57251 0
   "../outputs/area_by_risk_class.png" 1780584420 52486 97d0bc922b9233ea916a408a5efd428c ""
   "../outputs/aridity_index.png" 1780584364 201490 e6fd084bdbdb7774cf1e289b93cda109 ""
   "../outputs/burned_areas_2021_2024.png" 1780584318 199210 179a95caf4e2c8ed753a162dbca3fb45 ""
   "../outputs/correlation_heatmap.png" 1780439294 68103 af6d62c388d6094bb69c0e9ef7c7a8d9 ""
   "../outputs/critical_locations.png" 1780584368 239579 7005d5c60a5c539efa6989ab3d142e44 ""
   "../outputs/fuel_network.png" 1780584385 242206 48f58bb58b2e9d425e00e553cc5bcc4f ""
-  "../outputs/mean_hazard.png" 1780584348 1558568 d7b10cb9fa6e9a503b779c51c41ee6fa ""
+  "../outputs/mean_hazard.png" 1780593621 1558568 d7b10cb9fa6e9a503b779c51c41ee6fa ""
   "../outputs/municipal_coverage_gaps.png" 1780584442 236846 74f90d7c347fb1e218dc1f2b4cb249ab ""
   "../outputs/national_coverage_stacked.png" 1780584429 45130 1934fdfebc8877e97b351218b02ec63d ""
   "../outputs/priority_map.png" 1780439295 316230 b44ab185a16113c31b1e8450ea7e5e0e ""
@@ -45,6 +45,7 @@
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy9.tfm" 1136765053 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136765053 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
+  "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti9.tfm" 1136765053 1476 cccc6cc4935c18ec3d5623b77ecb8b74 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmtt10.tfm" 1136765053 768 1321e9409b4137d6fb428ac9dc956269 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
@@ -62,6 +63,7 @@
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1247596667 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1247596667 31099 342ef5a582aacbd3346f3cf4579679fa ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1779374883 147843 cb36a076061ba7db73c92bcbd7575334 ""
@@ -170,11 +172,11 @@
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1700127473 8944 e3433baec74c4b7b278c6b6a547ff9ec ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "ProjectTemplate.aux" 1780586196 10029 55eac02b824baf354bf826bbc9edf7e4 "pdflatex"
-  "ProjectTemplate.bbl" 1780585914 5851 214ba235a53f631875ef285c8bf0f973 "bibtex ProjectTemplate"
-  "ProjectTemplate.tex" 1780586186 65373 88fd2b838b576c2be9bd1d8fea860123 ""
-  "ProjectTemplate.toc" 1780586196 1529 c21ce7650dc682cd86ef438f2e16a898 "pdflatex"
-  "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" 1780586186 65373 88fd2b838b576c2be9bd1d8fea860123 ""
+  "ProjectTemplate.aux" 1780597191 9933 b7bf7c3a8c8f40d2a1935c798e4f980e "pdflatex"
+  "ProjectTemplate.bbl" 1780597185 5851 214ba235a53f631875ef285c8bf0f973 "bibtex ProjectTemplate"
+  "ProjectTemplate.tex" 1780597174 64677 81f6797995684b188317b7273711406e ""
+  "ProjectTemplate.toc" 1780597191 1474 0f3284ecbd4a0fea759559cb6b76dca0 "pdflatex"
+  "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" 1780597174 64677 81f6797995684b188317b7273711406e ""
   "logo.png" 1780439294 15403 ec49504026331af507ca4b505dbd3b29 ""
   (generated)
   "ProjectTemplate.aux"

@@ -1,0 +1,20 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Problem Description and Indicators}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Problem Description}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Indicators}{4}{}%
+\contentsline {section}{\numberline {2}Data Analytics, Optimization and Policy Suggestions}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Datasets}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Data Preparation}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Data Cleaning}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Spatial Harmonisation}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Municipality-Level Integration}{6}{}%
+\contentsline {subsection}{\numberline {2.3}Wildfire Risk Assessment}{6}{}%
+\contentsline {subsection}{\numberline {2.4}Prevention Coverage Analysis}{13}{}%
+\contentsline {subsection}{\numberline {2.5}Municipal-Level Analysis}{16}{}%
+\contentsline {subsection}{\numberline {2.6}Economic Vulnerability Analysis}{17}{}%
+\contentsline {subsection}{\numberline {2.7}Relative and Absolute Coverage Gaps and Economic Vulnerability}{18}{}%
+\contentsline {subsection}{\numberline {2.8}Results and Discussion}{22}{}%
+\contentsline {subsection}{\numberline {2.9}Policy Interventions and Ethical Implications}{24}{}%
+\contentsline {subsection}{\numberline {2.10}Conclusion}{25}{}%
+\contentsline {section}{CRediT Author Statement}{26}{}%
+\contentsline {section}{References}{28}{}%
