@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex ProjectTemplate"] 1780844693.05819 "ProjectTemplate.aux" "ProjectTemplate.bbl" "ProjectTemplate" 1780845182.19999 0
+["bibtex ProjectTemplate"] 1780858332.73892 "ProjectTemplate.aux" "ProjectTemplate.bbl" "ProjectTemplate" 1780858340.67282 0
   "./references.bib" 1780439294 7506 24a0f84e0393b0487b2fc5c3a169d88d ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "ProjectTemplate.aux" 1780845180 9575 d6965d0012b65ccc7e7cc15fc3bb25df "pdflatex"
+  "ProjectTemplate.aux" 1780858339 9648 21d1ef3b128759f1b55a39fb979914da "pdflatex"
   (generated)
   "ProjectTemplate.bbl"
   "ProjectTemplate.blg"
   (rewritten before read)
-["pdflatex"] 1780845174.56991 "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" "ProjectTemplate.pdf" "ProjectTemplate" 1780845182.20075 0
+["pdflatex"] 1780858333.18745 "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" "ProjectTemplate.pdf" "ProjectTemplate" 1780858340.67357 0
   "../outputs/area_by_risk_class.png" 1780841546 45704 d4b35de0a9fd588dc898818b4ce4b91d ""
   "../outputs/aridity_index.png" 1780841546 201490 e356f7efb709970415e8125274e1af2f ""
   "../outputs/burned_areas_2021_2024.png" 1780841546 199210 cff88a377a6ea1558322ae60c2ea44bf ""
@@ -172,11 +172,11 @@
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/latex/ucs/utf8x.def" 1700127473 8944 e3433baec74c4b7b278c6b6a547ff9ec ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/ritap/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "ProjectTemplate.aux" 1780845180 9575 d6965d0012b65ccc7e7cc15fc3bb25df "pdflatex"
-  "ProjectTemplate.bbl" 1780844693 5851 214ba235a53f631875ef285c8bf0f973 "bibtex ProjectTemplate"
-  "ProjectTemplate.tex" 1780845168 63351 2a301d06632ad39d83eeac9c53ed40c0 ""
-  "ProjectTemplate.toc" 1780845180 1239 737e530524e96043ba9c186032fcf0cf "pdflatex"
-  "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" 1780845168 63351 2a301d06632ad39d83eeac9c53ed40c0 ""
+  "ProjectTemplate.aux" 1780858339 9648 21d1ef3b128759f1b55a39fb979914da "pdflatex"
+  "ProjectTemplate.bbl" 1780858333 5851 214ba235a53f631875ef285c8bf0f973 "bibtex ProjectTemplate"
+  "ProjectTemplate.tex" 1780858326 63393 d83fa9b39d00892d534f59f027ddf25c ""
+  "ProjectTemplate.toc" 1780858339 1239 737e530524e96043ba9c186032fcf0cf "pdflatex"
+  "c:/Users/ritap/wildfires-portugal-smartcities/essay/ProjectTemplate.tex" 1780858326 63393 d83fa9b39d00892d534f59f027ddf25c ""
   "logo.png" 1780439294 15403 ec49504026331af507ca4b505dbd3b29 ""
   (generated)
   "ProjectTemplate.aux"

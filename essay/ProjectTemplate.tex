@@ -447,7 +447,7 @@ area perimeters for 2021--2024 were merged into a single cumulative binary
 layer (burned~=~5, unburned~=~1 on the normalised 1--5 scale). All layers
 were then normalised to a common 1--5 scale and combined through a weighted
 overlay to produce the composite Wildfire Risk Index, described in detail in
-Section~\ref{sec:Wildfire Risk Assessment}. Municipal-level statistics were
+Section~\ref{subsec:wildfire-risk-assessment}. Municipal-level statistics were
 subsequently computed by iterating over each municipality polygon, rasterising
 its boundary onto the reference grid, and intersecting it with the risk and
 coverage layers to extract per-municipality totals. Social vulnerability scores
@@ -456,7 +456,7 @@ names as the common key.\\
 
 
 \subsection{Wildfire Risk Assessment}
-
+\label{subsec:wildfire-risk-assessment}
 
 The wildfire risk model is constructed through a weighted overlay of five
 spatial input layers, each normalised to a common 1--5 ordinal scale prior
