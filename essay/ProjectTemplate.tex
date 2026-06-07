@@ -417,6 +417,7 @@ values were removed. Municipality names were then normalised through Unicode
 accent removal and lowercasing to allow consistent matching between the INE
 dataset and the official administrative boundary file, producing a final set
 of 278 matched municipalities for the municipal-level analysis.\\
+\newpage
 
 \subsubsection{Spatial Harmonisation}
 All datasets were aligned to a common spatial reference system, EPSG:3763
@@ -470,13 +471,13 @@ normalised to the 1--5 scale, where pixels coinciding with a critical
 location receive the maximum value. The vegetation index (IQV) and aridity
 index are each normalised to 1--5 using min-max normalisation, with zero
 values treated as no-data and excluded from the calculation.
-
+\newpage
 Figure~\ref{fig:burned_areas} shows the spatial distribution of burned
 areas across the four-year study period.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.50\textwidth]{../outputs/burned_areas_2021_2024.png}
+\includegraphics[width=0.75\textwidth]{../outputs/burned_areas_2021_2024.png}
 \caption{Burned area perimeters across mainland Portugal, 2021--2024.}
 \label{fig:burned_areas}
 \end{figure}
@@ -488,7 +489,7 @@ the study period.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.55\textwidth]{../outputs/mean_hazard.png}
+\includegraphics[width=0.95\textwidth]{../outputs/mean_hazard.png}
 \caption{Mean conjunctural hazard index across mainland Portugal, 2021--2024.}
 \label{fig:mean_hazard}
 \end{figure}
@@ -500,7 +501,7 @@ vegetation index.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.55\textwidth]{../outputs/vegetation_index.png}
+\includegraphics[width=0.95\textwidth]{../outputs/vegetation_index.png}
 \caption{Vegetation index (IQV) across mainland Portugal.}
 \label{fig:vegetation_index}
 \end{figure}
@@ -512,7 +513,7 @@ aridity index.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.55\textwidth]{../outputs/aridity_index.png}
+\includegraphics[width=0.95\textwidth]{../outputs/aridity_index.png}
 \caption{Aridity index across mainland Portugal.}
 \label{fig:aridity_index}
 \end{figure}
@@ -524,11 +525,11 @@ critical fire locations.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.55\textwidth]{../outputs/critical_locations.png}
+\includegraphics[width=0.95\textwidth]{../outputs/critical_locations.png}
 \caption{Critical fire locations across mainland Portugal.}
 \label{fig:critical_locations}
 \end{figure}
-
+\newpage
 
 
 The composite risk score is computed as a weighted overlay:
@@ -555,11 +556,12 @@ Figure~\ref{fig:risk_map} shows the final national wildfire risk map.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.50\textwidth]{../outputs/wildfire_risk_map.png}
+\includegraphics[width=0.65\textwidth]{../outputs/wildfire_risk_map.png}
 \caption{Integrated Wildfire Risk Map for mainland Portugal (2021--2024).
 Risk classes range from 1 (Very Low) to 5 (Very High).}
 \label{fig:risk_map}
 \end{figure}
+\newpage
 
 
 \subsubsection*{Identification of High-Risk Areas}
@@ -576,7 +578,7 @@ risk class.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.70\textwidth]{../outputs/area_by_risk_class.png}
+\includegraphics[width=0.80\textwidth]{../outputs/area_by_risk_class.png}
 \caption{Total area by wildfire risk class across mainland Portugal
 (2021--2024). Classes 4 and 5 form the basis of all subsequent
 coverage analysis.}
@@ -610,11 +612,11 @@ the Primary Fuel Management Network across mainland Portugal.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.55\textwidth]{../outputs/fuel_network.png}
+\includegraphics[width=0.95\textwidth]{../outputs/fuel_network.png}
 \caption{Primary Fuel Management Network (RPFGC) across mainland Portugal.}
 \label{fig:fuel_network}
 \end{figure}
-
+\newpage
 
 Figure~\ref{fig:risk_fuel_overlay} shows the spatial overlap between
 the integrated wildfire risk model and the Primary Fuel Management
@@ -625,14 +627,14 @@ conversely, where high-risk areas remain without network coverage.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.60\textwidth]{../outputs/risk_fuel_overlay.png}
+\includegraphics[width=0.75\textwidth]{../outputs/risk_fuel_overlay.png}
 \caption{Spatial overlay of the integrated wildfire risk model and
 the Primary Fuel Management Network across mainland Portugal
 (2021--2024). Risk classes range from 1 (Very Low) to 5 (Very High).
 The network is shown in dark blue.}
 \label{fig:risk_fuel_overlay}
 \end{figure}
-
+\newpage
 
 
 
@@ -698,7 +700,8 @@ intersecting the municipal boundaries with the high-risk mask and the
 buffer zone. Municipalities with a high-risk area below
 1~km\textsuperscript{2} are excluded from the ranking to avoid
 results dominated by very small territorial units.
-
+Municipalities shown in grey in the map have no high-risk area within their boundaries and are therefore not part of the coverage analysis, as there is no high-risk territory to measure coverage against.
+\newpage
 Figure~\ref{fig:municipal_gaps} shows the Gap Ratio map by municipality
 and the top 10 municipalities by absolute uncovered high-risk area.
 
@@ -738,12 +741,7 @@ The INE dataset is loaded and matched to the municipal boundaries
 shapefile by municipality name. To account for differences in
 accentuation and capitalisation between the two sources, municipality
 names are normalised by removing accents and converting to lowercase
-prior to matching. Municipalities that could not be matched are
-excluded from the vulnerability analysis and are represented in light
-grey in the maps. This is a known limitation when integrating datasets
-from different administrative sources, as minor inconsistencies in
-name encoding between the records and the shapefile can
-prevent exact matching.\\
+prior to matching.\\
 
 Table~\ref{tab:vulnerability_top10} shows the ten most economically
 vulnerable municipalities in mainland Portugal, ranked by their
@@ -796,7 +794,7 @@ of vulnerability scores across mainland Portugal.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{../outputs/vulnerability_map.png}
+\includegraphics[width=0.55\textwidth]{../outputs/vulnerability_map.png}
 \caption{Economic vulnerability score by municipality, based on the
 INE 2023 per capita income index (IpC). Darker colours indicate
 higher vulnerability.}
@@ -916,6 +914,7 @@ Sabugal              & 120.69 & 55.0 & 45.0 & 0.98 \\
 \hline
 \end{tabular}
 \end{table}
+\newpage
 Figure~\ref{fig:heatmap} shows the correlation heatmap between all
 key municipal indicators.
 
@@ -962,6 +961,7 @@ to assign each municipality to a priority level, as follows:
   \item \textbf{Low:} Gap Ratio below median and vulnerability below
         median
 \end{itemize}
+\newpage
 
 Figure~\ref{fig:priority_map} shows the resulting priority map and
 the top priority municipalities by uncovered high-risk area.
@@ -1021,7 +1021,7 @@ Miranda do Douro  &  87.8 & 0.906 & 21.50 \\
 \hline
 \end{tabular}
 \end{table}
-
+\newpage
 
 \subsection{Results and Discussion}
 \label{subsec:results}
