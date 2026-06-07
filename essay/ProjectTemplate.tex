@@ -403,7 +403,7 @@ to the national average \cite{INE_PoderCompra}.\\
 
 \subsection{Data Preparation}
 
-\subsubsection{Data Cleaning}
+\subsubsection*{Data Cleaning}
 All datasets were inspected and cleaned before analysis to ensure consistency
 and correctness. For the conjunctural hazard rasters, nodata values were
 identified and masked separately for each annual layer, since each yearly file
@@ -419,7 +419,7 @@ dataset and the official administrative boundary file, producing a final set
 of 278 matched municipalities for the municipal-level analysis.\\
 \newpage
 
-\subsubsection{Spatial Harmonisation}
+\subsubsection*{Spatial Harmonisation}
 All datasets were aligned to a common spatial reference system, EPSG:3763
 (PT-TM06/ETRS89), the official Portuguese national grid, and resampled to a
 uniform 250~m resolution reference grid. The conjunctural hazard rasters were
@@ -435,7 +435,7 @@ critical fire locations, vegetation index, aridity index, and the primary fuel
 management network, were verified against the reference coordinate system prior
 to rasterisation.\\
 
-\subsubsection{Municipality-Level Integration}
+\subsubsection*{Municipality-Level Integration}
 Vector layers were converted to raster format at 250~m resolution using the
 hazard layer as the reference grid, via \texttt{rasterio.features.rasterize}.
 Categorical attributes were mapped to ordinal numerical values prior to
@@ -1303,7 +1303,7 @@ The specific contributions of each author are detailed below
 according to the CRediT (Contributor Roles Taxonomy) framework.\\
 
 \textbf{Inês Maneta:} Software, Formal Analysis, Investigation,
-Writing -- Original Draft.
+Writing -- Original Draft, Resources.
 
 \textbf{João Sousa:} Software, Validation, Writing -- Original
 Draft, Writing -- Review \& Editing.
